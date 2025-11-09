@@ -2,6 +2,12 @@
   const params = new URLSearchParams(window.location.search);
   const questionSet = params.get('questionSet') || 'questions_sample';
   const datasetUrl = `data/${questionSet}.json`;
+  const config = {
+    submissionMode:
+      params.get('submissionMode') ||
+      (params.has('assignmentId') ? 'mturk' : 'local'),
+    responseEndpoint: params.get('responseEndpoint') || null,
+  };
 
   const elements = {
     axisLabel: document.getElementById('axisLabel'),
@@ -24,46 +30,61 @@
     hitInput: document.getElementById('hitId'),
     form: document.getElementById('mturkForm'),
     previewStatus: document.getElementById('previewStatus'),
+    participantPanel: document.getElementById('participantPanel'),
+    participantForm: document.getElementById('participantForm'),
+    participantName: document.getElementById('participantName'),
+    participantEmail: document.getElementById('participantEmail'),
+    participantNotes: document.getElementById('participantNotes'),
+    participantHint: document.getElementById('participantHint'),
+    localPanel: document.getElementById('localSubmissionPanel'),
+    downloadButton: document.getElementById('downloadButton'),
+    sendButton: document.getElementById('sendButton'),
+    submissionStatus: document.getElementById('submissionStatus'),
   };
 
   const state = {
     questions: [],
     index: 0,
     responses: [],
+    submissionMode: config.submissionMode,
+    isPreview: false,
+    participant: {
+      name: '',
+      email: '',
+      notes: '',
+    },
   };
 
-  function initMTurkContext() {
-    const assignmentId = params.get('assignmentId') || '';
-    const workerId = params.get('workerId') || '';
-    const hitId = params.get('hitId') || '';
-    const submitHost = params.get('turkSubmitTo');
+  function configureSubmissionMode() {
+    if (state.submissionMode === 'mturk') {
+      const assignmentId = params.get('assignmentId') || '';
+      const workerId = params.get('workerId') || '';
+      const hitId = params.get('hitId') || '';
+      const submitHost = params.get('turkSubmitTo');
 
-    elements.assignmentInput.value = assignmentId;
-    elements.workerInput.value = workerId;
-    elements.hitInput.value = hitId;
+      elements.assignmentInput.value = assignmentId;
+      elements.workerInput.value = workerId;
+      elements.hitInput.value = hitId;
 
-    if (submitHost) {
-      elements.form.action = `${submitHost}/mturk/externalSubmit`;
+      if (submitHost) {
+        elements.form.action = `${submitHost}/mturk/externalSubmit`;
+      }
+
+      state.isPreview = assignmentId === 'ASSIGNMENT_ID_NOT_AVAILABLE';
+      elements.previewStatus.hidden = !state.isPreview;
+    } else {
+      state.isPreview = false;
+      elements.previewStatus.hidden = true;
+      if (elements.submissionPanel) {
+        elements.submissionPanel.hidden = true;
+      }
     }
 
-    const isPreview = assignmentId === 'ASSIGNMENT_ID_NOT_AVAILABLE';
-    elements.previewStatus.hidden = !isPreview;
-    toggleStudyDisabled(isPreview);
-    return !isPreview;
-  }
-
-  function toggleStudyDisabled(disabled) {
-    [
-      elements.backButton,
-      elements.nextButton,
-      ...elements.choices.map((choice) => choice),
-    ].forEach((ctrl) => {
-      ctrl.disabled = disabled;
-    });
-    elements.submitButton.disabled = true;
-    if (disabled) {
-      elements.helper.textContent =
-        'Accept the HIT to unlock the study interface.';
+    if (elements.localPanel) {
+      elements.localPanel.hidden = true;
+      if (elements.sendButton) {
+        elements.sendButton.hidden = !config.responseEndpoint;
+      }
     }
   }
 
@@ -169,14 +190,8 @@
       axis: question.axis || null,
       prompt: question.prompt || '',
       choice,
-      videoA: {
-        label: question.videoA?.label || '',
-        src: question.videoA?.src || '',
-      },
-      videoB: {
-        label: question.videoB?.label || '',
-        src: question.videoB?.src || '',
-      },
+      videoA: question.videoA ? { ...question.videoA } : null,
+      videoB: question.videoB ? { ...question.videoB } : null,
       timestamp: new Date().toISOString(),
     };
   }
@@ -188,6 +203,15 @@
   }
 
   function updateNavState() {
+    const blockingReason = getBlockingReason();
+    if (blockingReason) {
+      setControlsLocked(true);
+      elements.helper.textContent = blockingReason;
+      return;
+    }
+
+    setControlsLocked(false);
+
     const total = state.questions.length;
     const answeredCurrent = Boolean(state.responses[state.index]);
     const onLastQuestion = state.index === total - 1;
@@ -203,8 +227,13 @@
     if (allQuestionsAnswered()) {
       prepareSubmission();
     } else {
-      elements.submissionPanel.hidden = true;
-      elements.submitButton.disabled = true;
+      if (elements.submissionPanel) {
+        elements.submissionPanel.hidden = true;
+        elements.submitButton.disabled = true;
+      }
+      if (elements.localPanel) {
+        elements.localPanel.hidden = true;
+      }
     }
   }
 
@@ -216,11 +245,27 @@
   }
 
   function prepareSubmission() {
-    elements.submissionPanel.hidden = false;
-    elements.responsesInput.value = JSON.stringify(state.responses);
-    elements.submitButton.disabled = false;
-    elements.helper.textContent =
-      'All questions answered. Review below and submit when ready.';
+    if (state.submissionMode === 'mturk') {
+      elements.submissionPanel.hidden = false;
+      elements.responsesInput.value = JSON.stringify(state.responses);
+      elements.submitButton.disabled = false;
+      elements.helper.textContent =
+        'All questions answered. Review below and submit when ready.';
+      return;
+    }
+
+    if (elements.localPanel) {
+      elements.localPanel.hidden = false;
+      if (elements.downloadButton) {
+        elements.downloadButton.disabled = false;
+      }
+      if (elements.sendButton) {
+        elements.sendButton.hidden = !config.responseEndpoint;
+        elements.sendButton.disabled = !config.responseEndpoint;
+      }
+      elements.helper.textContent =
+        'All questions answered. Save or send your responses below.';
+    }
   }
 
   function goNext() {
@@ -243,6 +288,15 @@
     );
     elements.nextButton.addEventListener('click', goNext);
     elements.backButton.addEventListener('click', goBack);
+    if (elements.participantForm) {
+      elements.participantForm.addEventListener('input', handleParticipantInput);
+    }
+    if (elements.downloadButton) {
+      elements.downloadButton.addEventListener('click', downloadResponses);
+    }
+    if (elements.sendButton) {
+      elements.sendButton.addEventListener('click', sendResponses);
+    }
   }
 
   function autoPlayVideo(videoEl) {
@@ -267,14 +321,136 @@
     }
   }
 
-  function start() {
-    const interactive = initMTurkContext();
-    bindEvents();
-    if (interactive) {
-      loadQuestions();
-    } else {
-      loadQuestions(); // allow previewers to at least read content
+  function handleParticipantInput() {
+    if (!elements.participantForm) {
+      return;
     }
+    state.participant.name = elements.participantName?.value?.trim() || '';
+    state.participant.email = elements.participantEmail?.value?.trim() || '';
+    state.participant.notes = elements.participantNotes?.value?.trim() || '';
+    updateParticipantHint();
+    updateNavState();
+  }
+
+  function updateParticipantHint() {
+    if (!elements.participantHint) {
+      return;
+    }
+    if (isParticipantValid()) {
+      elements.participantHint.textContent = `Thanks, ${
+        state.participant.name
+      }!`;
+    } else {
+      elements.participantHint.textContent =
+        'Please tell us who you are so we can credit your responses.';
+    }
+  }
+
+  function isParticipantValid() {
+    if (state.submissionMode === 'mturk') {
+      return true;
+    }
+    return Boolean(state.participant.name?.trim());
+  }
+
+  function getBlockingReason() {
+    if (state.submissionMode === 'mturk' && state.isPreview) {
+      return 'Accept the HIT to unlock the study interface.';
+    }
+    if (state.submissionMode !== 'mturk' && !isParticipantValid()) {
+      return 'Enter your display name to begin.';
+    }
+    return null;
+  }
+
+  function setControlsLocked(locked) {
+    elements.choices.forEach((choice) => {
+      choice.disabled = locked;
+    });
+    elements.backButton.disabled = locked || state.index === 0;
+    if (locked) {
+      elements.nextButton.disabled = true;
+    }
+  }
+
+  function buildSubmissionPayload() {
+    return {
+      questionSet,
+      completedAt: new Date().toISOString(),
+      participant: state.participant,
+      responses: state.responses.filter(Boolean),
+      totalQuestions: state.questions.length,
+    };
+  }
+
+  function downloadResponses() {
+    const payload = buildSubmissionPayload();
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {
+      type: 'application/json',
+    });
+    const nameSlug = (state.participant.name || 'participant')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+    const filename = `responses_${nameSlug || 'participant'}.json`;
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
+    if (elements.submissionStatus) {
+      elements.submissionStatus.textContent =
+        'Download complete. Send the JSON file to the organizer.';
+    }
+  }
+
+  async function sendResponses() {
+    if (!config.responseEndpoint) {
+      if (elements.submissionStatus) {
+        elements.submissionStatus.textContent =
+          'No upload endpoint configured. Use the download button instead.';
+      }
+      return;
+    }
+    const payload = buildSubmissionPayload();
+    if (elements.sendButton) {
+      elements.sendButton.disabled = true;
+    }
+    if (elements.submissionStatus) {
+      elements.submissionStatus.textContent = 'Uploading…';
+    }
+    try {
+      const response = await fetch(config.responseEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!response.ok) {
+        throw new Error(`Upload failed (${response.status})`);
+      }
+      if (elements.submissionStatus) {
+        elements.submissionStatus.textContent = 'Responses sent successfully!';
+      }
+    } catch (error) {
+      console.error(error);
+      if (elements.submissionStatus) {
+        elements.submissionStatus.textContent =
+          'Upload failed. Please try again or use the download option.';
+      }
+    } finally {
+      if (elements.sendButton) {
+        elements.sendButton.disabled = false;
+      }
+    }
+  }
+
+  function start() {
+    configureSubmissionMode();
+    updateParticipantHint();
+    bindEvents();
+    loadQuestions();
   }
 
   start();

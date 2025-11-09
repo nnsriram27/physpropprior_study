@@ -20,6 +20,27 @@
         </div>
       </header>
 
+      <section class="participant-panel" id="participantPanel">
+        <h2>Participant Information</h2>
+        <p class="participant-hint" id="participantHint">
+          Please tell us who you are so we can credit your responses.
+        </p>
+        <form id="participantForm" class="participant-form">
+          <label>
+            Display name (required)
+            <input type="text" id="participantName" name="name" required />
+          </label>
+          <label>
+            Email or contact (optional)
+            <input type="email" id="participantEmail" name="email" />
+          </label>
+          <label>
+            Notes (optional)
+            <textarea id="participantNotes" name="notes"></textarea>
+          </label>
+        </form>
+      </section>
+
       <section class="prompt-row" aria-live="polite">
         <p class="question-text" id="questionPrompt">Loading question set…</p>
         <div class="context-block" id="contextBlock" hidden>
@@ -86,6 +107,23 @@
             Submit Answers
           </button>
         </form>
+      </section>
+
+      <section class="submission-panel" id="localSubmissionPanel" hidden>
+        <h2>Save Your Responses</h2>
+        <p>
+          Download your answers or send them to the organizer once you have
+          completed every question.
+        </p>
+        <div class="local-actions">
+          <button type="button" id="downloadButton" disabled>
+            Download JSON
+          </button>
+          <button type="button" id="sendButton" hidden disabled>
+            Send to Organizer
+          </button>
+        </div>
+        <p class="helper-text" id="submissionStatus"></p>
       </section>
     </main>
   </body>
