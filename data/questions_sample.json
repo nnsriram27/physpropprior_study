@@ -1,0 +1,60 @@
+[
+  {
+    "id": "control_friction_banana",
+    "axis": "Control fidelity",
+    "axisDetail": "High vs Low friction",
+    "prompt": "Which video better matches the HIGH friction target for the banana sliding scenario?",
+    "videoA": {
+      "label": "PhysPropPrior — Banana High Friction",
+      "src": "physpropprior/friction/banana_slide-v1_v2w_high_friction.mp4"
+    },
+    "videoB": {
+      "label": "PhysPropPrior — Banana Low Friction",
+      "src": "physpropprior/friction/banana_slide-v1_v2w_low_friction.mp4"
+    }
+  },
+  {
+    "id": "phys_plausibility_basketball",
+    "axis": "Physical plausibility",
+    "axisDetail": "High bounce target",
+    "prompt": "For the HIGH bounce prompt, which video looks more physically correct?",
+    "videoA": {
+      "label": "PhysPropPrior — Basketball High Bounce",
+      "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4"
+    },
+    "videoB": {
+      "label": "Baseline (Text Conditioned) — Basketball High Bounce",
+      "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_high_bounce_p1.mp4"
+    }
+  },
+  {
+    "id": "general_quality_football",
+    "axis": "General quality / realism",
+    "axisDetail": "Deformation realism",
+    "prompt": "Ignoring the prompt, which video simply looks more realistic overall?",
+    "videoA": {
+      "label": "PhysPropPrior — Football Juggle High Deform",
+      "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4"
+    },
+    "videoB": {
+      "label": "Cosmos2B — Football Juggle High Deform",
+      "src": "cosmos2B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4"
+    }
+  },
+  {
+    "id": "force_obedience_curling",
+    "axis": "Force following",
+    "axisDetail": "Direction compliance",
+    "prompt": "Given the applied force arrow, which video follows the indicated direction better?",
+    "videoA": {
+      "label": "PhysPropPrior — Curling Force Angle 225°",
+      "src": "physpropprior/force/curling_v1_v2w_force_051_angle_225.mp4"
+    },
+    "videoB": {
+      "label": "Baseline (Text Conditioned) — Curling Force Angle 225°",
+      "src": "baseline_text_conditioned/force/curling_v1_v2w_force_051_angle_225.mp4"
+    },
+    "contextImage": "physpropprior/force/curling_v1_v2w_force_051_angle_225_force.png",
+    "contextCaption": "Arrow indicates the target force direction for this trial."
+  }
+]
