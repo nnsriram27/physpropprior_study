@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.screen {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Welcome Screen */
+#welcome-screen {
+    max-width: 700px;
+    margin: 100px auto;
+}
+
+#welcome-screen h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#welcome-screen p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#welcome-screen ul {
+    margin: 20px 0 20px 40px;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Study Screen */
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.question-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.question-container h2 {
+    color: #333;
+    font-size: 1.8em;
+    line-height: 1.4;
+}
+
+.videos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.video-wrapper {
+    text-align: center;
+}
+
+.video-wrapper h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #000;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-choice {
+    background: #4CAF50;
+    color: white;
+    min-width: 200px;
+}
+
+.btn-choice:hover:not(:disabled) {
+    background: #45a049;
+}
+
+.btn-choice.selected {
+    background: #2196F3;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+    background: #5a6268;
+}
+
+/* Completion Screen */
+#completion-screen {
+    max-width: 700px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+#completion-screen h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#completion-screen p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+#completion-screen .btn {
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .videos-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .controls-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-choice {
+        width: 100%;
+    }
+
+    #welcome-screen,
+    #completion-screen {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    #welcome-screen h1,
+    #completion-screen h1 {
+        font-size: 1.8em;
+    }
+
+    .question-container h2 {
+        font-size: 1.3em;
+    }
+}

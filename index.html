@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2AFC Video Study - PhysPropPrior</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <h1>Welcome to the 2AFC Video Study</h1>
+            <p>In this study, you will be shown pairs of videos and asked to answer questions about them.</p>
+            <p>For each trial:</p>
+            <ul>
+                <li>Watch both Video A and Video B</li>
+                <li>Read the question carefully</li>
+                <li>Select the video that best answers the question</li>
+            </ul>
+            <p>You can replay the videos as many times as you need.</p>
+            <button id="start-button" class="btn btn-primary">Start Study</button>
+        </div>
+
+        <!-- Study Screen -->
+        <div id="study-screen" class="screen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+                <span class="progress-text" id="progress-text">Trial 1 of 1</span>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Question will appear here</h2>
+            </div>
+
+            <div class="videos-container">
+                <div class="video-wrapper">
+                    <h3>Video A</h3>
+                    <video id="video-a" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-wrapper">
+                    <h3>Video B</h3>
+                    <video id="video-b" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <button id="select-a" class="btn btn-choice">Select Video A</button>
+                <button id="select-b" class="btn btn-choice">Select Video B</button>
+            </div>
+
+            <div class="navigation-container">
+                <button id="prev-button" class="btn btn-secondary" disabled>Previous</button>
+                <button id="next-button" class="btn btn-secondary" disabled>Next</button>
+            </div>
+        </div>
+
+        <!-- Completion Screen -->
+        <div id="completion-screen" class="screen">
+            <h1>Study Complete!</h1>
+            <p>Thank you for participating in this study.</p>
+            <p>Your responses have been recorded.</p>
+            <button id="download-button" class="btn btn-primary">Download Results</button>
+            <button id="restart-button" class="btn btn-secondary">Start Over</button>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="study.js"></script>
+</body>
+</html>
