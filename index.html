@@ -3,111 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PhysPropPrior 2AFC Study</title>
+    <title>2AFC Study for Controllable Video Generation</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script defer src="assets/js/app.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <div>
-          <p class="eyebrow">PhysPropPrior User Study</p>
-          <h1>Two-Alternative Forced Choice Evaluation</h1>
-          <p class="lede">
-            Watch both videos, then decide which option best matches the prompt.
-          </p>
-        </div>
+    <main class="study-shell">
+      <header class="study-header">
         <div class="status-pill" id="previewStatus" hidden>
           Accept the HIT to begin
         </div>
-      </div>
-    </header>
-
-    <main class="container">
-      <section class="instructions">
-        <h2>Instructions</h2>
-        <ul>
-          <li>Play each video fully before answering.</li>
-          <li>Use headphones if available for clearer audio cues.</li>
-          <li>
-            When a force diagram is shown, use it to judge which video obeys the
-            indicated interaction.
-          </li>
-          <li>
-            Once you choose between A or B, click “Save &amp; Next” to continue.
-          </li>
-        </ul>
-      </section>
-
-      <section class="study-panel" aria-live="polite">
-        <div class="question-meta">
-          <span class="axis-label" id="axisLabel">Axis — Control Fidelity</span>
+        <h1>2AFC Study for Controllable Video Generation</h1>
+        <div class="meta-row">
+          <span class="axis-label" id="axisLabel">Axis</span>
           <span class="progress" id="progressLabel">Question 0 of 0</span>
         </div>
-        <p class="question-text" id="questionPrompt">
-          Loading question set…
-        </p>
+      </header>
 
+      <section class="prompt-row" aria-live="polite">
+        <p class="question-text" id="questionPrompt">Loading question set…</p>
         <div class="context-block" id="contextBlock" hidden>
-          <figure>
-            <img id="contextImage" alt="Force reference" />
-            <figcaption id="contextCaption"></figcaption>
-          </figure>
+          <img id="contextImage" alt="Reference diagram" />
+          <p id="contextCaption"></p>
         </div>
-
-        <div class="media-grid">
-          <article class="media-card" data-choice="A">
-            <header>
-              <span class="choice-pill">Option A</span>
-              <h3 id="labelA">Video A</h3>
-            </header>
-            <video
-              id="videoA"
-              controls
-              preload="metadata"
-              playsinline
-              muted
-            ></video>
-            <label class="choice-control">
-              <input type="radio" name="choice" value="A" />
-              <span>Select A</span>
-            </label>
-          </article>
-
-          <article class="media-card" data-choice="B">
-            <header>
-              <span class="choice-pill">Option B</span>
-              <h3 id="labelB">Video B</h3>
-            </header>
-            <video
-              id="videoB"
-              controls
-              preload="metadata"
-              playsinline
-              muted
-            ></video>
-            <label class="choice-control">
-              <input type="radio" name="choice" value="B" />
-              <span>Select B</span>
-            </label>
-          </article>
-        </div>
-
-        <div class="control-bar">
-          <button type="button" id="backButton" disabled>Back</button>
-          <button type="button" id="nextButton" disabled>
-            Save &amp; Next
-          </button>
-        </div>
-        <p class="helper-text" id="helperText"></p>
       </section>
+
+      <section class="video-grid">
+        <article class="video-option" data-choice="A">
+          <p class="option-label">Video A</p>
+          <video
+            id="videoA"
+            controls
+            preload="metadata"
+            playsinline
+            muted
+          ></video>
+          <label class="choice-control">
+            <input type="radio" name="choice" value="A" />
+            <span>Select A</span>
+          </label>
+        </article>
+
+        <article class="video-option" data-choice="B">
+          <p class="option-label">Video B</p>
+          <video
+            id="videoB"
+            controls
+            preload="metadata"
+            playsinline
+            muted
+          ></video>
+          <label class="choice-control">
+            <input type="radio" name="choice" value="B" />
+            <span>Select B</span>
+          </label>
+        </article>
+      </section>
+
+      <div class="control-bar">
+        <button type="button" id="backButton" disabled>Back</button>
+        <button type="button" id="nextButton" disabled>Save &amp; Next</button>
+      </div>
+      <p class="helper-text" id="helperText"></p>
 
       <section class="submission-panel" id="submissionPanel" hidden>
         <h2>Submit to MTurk</h2>
-        <p>
-          Review your answers, then send them to Mechanical Turk. You can still
-          go back to double-check entries before submitting.
-        </p>
+        <p>Review your answers, then submit when ready.</p>
         <form
           id="mturkForm"
           method="POST"
@@ -123,15 +84,5 @@
         </form>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>
-          Need help? Update the question list in
-          <code>data/questions_sample.json</code> or point the
-          <code>questionSet</code> query parameter to a different file.
-        </p>
-      </div>
-    </footer>
   </body>
 </html>

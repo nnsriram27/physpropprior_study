@@ -12,8 +12,6 @@
     contextCaption: document.getElementById('contextCaption'),
     videoA: document.getElementById('videoA'),
     videoB: document.getElementById('videoB'),
-    labelA: document.getElementById('labelA'),
-    labelB: document.getElementById('labelB'),
     choices: Array.from(document.querySelectorAll('input[name="choice"]')),
     helper: document.getElementById('helperText'),
     backButton: document.getElementById('backButton'),
@@ -97,17 +95,19 @@
       return;
     }
 
-    elements.axisLabel.textContent = `${question.axis || 'Axis'} — ${
-      question.axisDetail || question.axis || ''
-    }`.trim();
+    const axisPieces = [
+      question.axis || 'Axis',
+      question.axisDetail || null,
+    ].filter(Boolean);
+    elements.axisLabel.textContent = axisPieces.join(' — ') || 'Axis';
     elements.progress.textContent = `Question ${index + 1} of ${
       state.questions.length
     }`;
     elements.prompt.textContent = question.prompt || 'Question text missing.';
 
     toggleContext(question);
-    configureMedia(elements.videoA, elements.labelA, question.videoA);
-    configureMedia(elements.videoB, elements.labelB, question.videoB);
+    configureMedia(elements.videoA, question.videoA);
+    configureMedia(elements.videoB, question.videoB);
 
     const previousResponse = state.responses[index]?.choice || null;
     elements.choices.forEach((input) => {
@@ -130,9 +130,8 @@
     }
   }
 
-  function configureMedia(videoEl, labelEl, meta = {}) {
-    const { src, label, poster } = meta;
-    labelEl.textContent = label || 'Unlabeled clip';
+  function configureMedia(videoEl, meta = {}) {
+    const { src, poster } = meta || {};
     if (src) {
       if (videoEl.getAttribute('src') !== src) {
         videoEl.src = src;
@@ -175,7 +174,7 @@
   }
 
   function highlightChoice(choice) {
-    document.querySelectorAll('.media-card').forEach((card) => {
+    document.querySelectorAll('.video-option').forEach((card) => {
       card.dataset.selected = card.dataset.choice === choice ? 'true' : 'false';
     });
   }
