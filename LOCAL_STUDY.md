@@ -13,6 +13,21 @@ their voting data for later analysis.
    to choose a specific dataset.
 3. Each participant is asked for a display name/email before answering.
 
+## Pre-sampling question packs
+
+1. Confirm the field map in `config/table_fields.json` matches the table cells you
+   plan to report. Each entry specifies the method, attribute, axis, dataset, and
+   number of questions that should be asked per participant.
+2. Generate packs (two questions per field by default):
+
+```bash
+python src/sample_question_packs.py --count 5 --prefix friend
+```
+
+This writes JSON files such as `data/packs/friend_01.json`. Share the survey
+link with `?questionSet=packs/friend_01` so each friend receives their assigned
+set of questions. (If you prefer a custom mix, pass `--participants alice bob`.)
+
 ## Saving responses
 
 After the participant answers every question they can:
@@ -52,7 +67,19 @@ function doPost(e) {
 
 ## Aggregating metrics
 
-Download the JSON files (or export the Google Sheet) and aggregate votes per
-axis/attribute to fill the controllability and physical-realism table in your
-paper. Each response entry already includes `questionId`, `axis`, and the
-chosen option, making it straightforward to compute preference percentages.
+1. Gather downloaded response files (or export the Google Sheet to JSON) into a
+   single folder, e.g., `responses/`.
+2. Run the metric script, which understands the `fieldId` metadata embedded in
+   each sampled question:
+
+```bash
+python src/compute_metrics.py --responses responses --output metrics.json
+```
+
+3. The script prints field-level accuracy/preference percentages, plus a
+   summarized `controllability` vs. `physical_realism` table keyed by method and
+   attribute. Use those percentages to populate Table 1 (values > 50% indicate a
+   preference for the ControlNet variant).
+
+If you add or remove table cells, update `config/table_fields.json` before
+sampling packs so the aggregator knows how to bucket responses.

@@ -1,0 +1,229 @@
+[
+  {
+    "id": "controllability_force_prompting_force",
+    "label": "Controllability — Force Prompting (Force)",
+    "axis": "controllability",
+    "method": "force_prompting",
+    "attribute": "force",
+    "dataset": "force_direction",
+    "questions": 2,
+    "filters": {
+      "meta.method": "force_prompting"
+    }
+  },
+  {
+    "id": "physical_force_prompting_force",
+    "label": "Physical Realism — Force Prompting (Force)",
+    "axis": "physical_realism",
+    "method": "force_prompting",
+    "attribute": "force",
+    "dataset": "force_baseline",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "force_prompting"
+    }
+  },
+  {
+    "id": "controllability_cosmos2B_restitution",
+    "label": "Controllability — Base Model (Restitution)",
+    "axis": "controllability",
+    "method": "cosmos2B",
+    "attribute": "restitution",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "cosmos2B",
+      "meta.attribute": "restitution"
+    }
+  },
+  {
+    "id": "controllability_cosmos2B_deformation",
+    "label": "Controllability — Base Model (Deformation)",
+    "axis": "controllability",
+    "method": "cosmos2B",
+    "attribute": "deformation",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "cosmos2B",
+      "meta.attribute": "deformation"
+    }
+  },
+  {
+    "id": "controllability_cosmos2B_force",
+    "label": "Controllability — Base Model (Force)",
+    "axis": "controllability",
+    "method": "cosmos2B",
+    "attribute": "force",
+    "dataset": "force_direction",
+    "questions": 2,
+    "filters": {
+      "meta.method": "cosmos2B"
+    }
+  },
+  {
+    "id": "physical_cosmos2B_restitution",
+    "label": "Physical Realism — Base Model (Restitution)",
+    "axis": "physical_realism",
+    "method": "cosmos2B",
+    "attribute": "restitution",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cosmos2B",
+      "meta.attribute": "restitution"
+    }
+  },
+  {
+    "id": "physical_cosmos2B_deformation",
+    "label": "Physical Realism — Base Model (Deformation)",
+    "axis": "physical_realism",
+    "method": "cosmos2B",
+    "attribute": "deformation",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cosmos2B",
+      "meta.attribute": "deformation"
+    }
+  },
+  {
+    "id": "physical_cosmos2B_force",
+    "label": "Physical Realism — Base Model (Force)",
+    "axis": "physical_realism",
+    "method": "cosmos2B",
+    "attribute": "force",
+    "dataset": "force_baseline",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cosmos2B"
+    }
+  },
+  {
+    "id": "controllability_baseline_text_conditioned_restitution",
+    "label": "Controllability — Ours (Text) (Restitution)",
+    "axis": "controllability",
+    "method": "baseline_text_conditioned",
+    "attribute": "restitution",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "baseline_text_conditioned",
+      "meta.attribute": "restitution"
+    }
+  },
+  {
+    "id": "controllability_baseline_text_conditioned_deformation",
+    "label": "Controllability — Ours (Text) (Deformation)",
+    "axis": "controllability",
+    "method": "baseline_text_conditioned",
+    "attribute": "deformation",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "baseline_text_conditioned",
+      "meta.attribute": "deformation"
+    }
+  },
+  {
+    "id": "controllability_baseline_text_conditioned_force",
+    "label": "Controllability — Ours (Text) (Force)",
+    "axis": "controllability",
+    "method": "baseline_text_conditioned",
+    "attribute": "force",
+    "dataset": "force_direction",
+    "questions": 2,
+    "filters": {
+      "meta.method": "baseline_text_conditioned"
+    }
+  },
+  {
+    "id": "physical_baseline_text_conditioned_restitution",
+    "label": "Physical Realism — Ours (Text) (Restitution)",
+    "axis": "physical_realism",
+    "method": "baseline_text_conditioned",
+    "attribute": "restitution",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "baseline_text_conditioned",
+      "meta.attribute": "restitution"
+    }
+  },
+  {
+    "id": "physical_baseline_text_conditioned_deformation",
+    "label": "Physical Realism — Ours (Text) (Deformation)",
+    "axis": "physical_realism",
+    "method": "baseline_text_conditioned",
+    "attribute": "deformation",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "baseline_text_conditioned",
+      "meta.attribute": "deformation"
+    }
+  },
+  {
+    "id": "physical_baseline_text_conditioned_force",
+    "label": "Physical Realism — Ours (Text) (Force)",
+    "axis": "physical_realism",
+    "method": "baseline_text_conditioned",
+    "attribute": "force",
+    "dataset": "force_baseline",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "baseline_text_conditioned"
+    }
+  },
+  {
+    "id": "controllability_physpropprior_friction",
+    "label": "Controllability — Ours (ControlNet) (Friction)",
+    "axis": "controllability",
+    "method": "physpropprior",
+    "attribute": "friction",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "physpropprior",
+      "meta.attribute": "friction"
+    }
+  },
+  {
+    "id": "controllability_physpropprior_restitution",
+    "label": "Controllability — Ours (ControlNet) (Restitution)",
+    "axis": "controllability",
+    "method": "physpropprior",
+    "attribute": "restitution",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "physpropprior",
+      "meta.attribute": "restitution"
+    }
+  },
+  {
+    "id": "controllability_physpropprior_deformation",
+    "label": "Controllability — Ours (ControlNet) (Deformation)",
+    "axis": "controllability",
+    "method": "physpropprior",
+    "attribute": "deformation",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "physpropprior",
+      "meta.attribute": "deformation"
+    }
+  },
+  {
+    "id": "controllability_physpropprior_force",
+    "label": "Controllability — Ours (ControlNet) (Force)",
+    "axis": "controllability",
+    "method": "physpropprior",
+    "attribute": "force",
+    "dataset": "force_direction",
+    "questions": 2,
+    "filters": {
+      "meta.method": "physpropprior"
+    }
+  }
+]

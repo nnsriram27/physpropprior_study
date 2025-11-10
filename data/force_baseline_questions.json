@@ -1573,5 +1573,530 @@
     },
     "contextImage": "physpropprior/force/curling_v1_v2w_force_051_angle_269_force.png",
     "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_banana_slide_v1_v2w_force_095_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "banana_slide-v1_v2w_force_095",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/banana_slide-v1_v2w_force_095_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/banana_slide-v1_v2w_force_095_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/banana_slide-v1_v2w_force_095_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_cup_slide_v1_v2w_force_051_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "cup_slide-v1_v2w_force_051",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/cup_slide-v1_v2w_force_051_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_banana_slide_v1_v2w_force_051_271_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "banana_slide-v1_v2w_force_051",
+      "angle": "271",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/banana_slide-v1_v2w_force_051_angle_271.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/banana_slide-v1_v2w_force_051_angle_271.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/banana_slide-v1_v2w_force_051_angle_271_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_bell_v1_v2w_force_051_181_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "bell_v1_v2w_force_051",
+      "angle": "181",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/bell_v1_v2w_force_051_angle_181.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/bell_v1_v2w_force_051_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/bell_v1_v2w_force_051_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_materialexplaundrybasket1_v2w_force_051_179_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_materialexplaundrybasket1_v2w_force_051",
+      "angle": "179",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_179.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/_materialexplaundrybasket1_v2w_force_051_angle_179.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_179_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_materialexpcube1_v2w_force_051_315_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_materialexpcube1_v2w_force_051",
+      "angle": "315",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/_materialexpcube1_v2w_force_051_angle_315.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/_materialexpcube1_v2w_force_051_angle_315.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/_materialexpcube1_v2w_force_051_angle_315_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_bell_v1_v2w_force_051_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "bell_v1_v2w_force_051",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/bell_v1_v2w_force_051_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/bell_v1_v2w_force_051_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/bell_v1_v2w_force_051_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_toycar4_v2w_force_030_181_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_toycar4_v2w_force_030",
+      "angle": "181",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/_toycar4_v2w_force_030_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/_toycar4_v2w_force_030_angle_181.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/_toycar4_v2w_force_030_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_materialexpcube1_v2w_force_051_271_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_materialexpcube1_v2w_force_051",
+      "angle": "271",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/_materialexpcube1_v2w_force_051_angle_271.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/_materialexpcube1_v2w_force_051_angle_271.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/_materialexpcube1_v2w_force_051_angle_271_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_toycar4_v2w_force_051_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_toycar4_v2w_force_051",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/_toycar4_v2w_force_051_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/_toycar4_v2w_force_051_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/_toycar4_v2w_force_051_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_toycar1_v2w_force_020_225_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_toycar1_v2w_force_020",
+      "angle": "225",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/_toycar1_v2w_force_020_angle_225.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/_toycar1_v2w_force_020_angle_225.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/_toycar1_v2w_force_020_angle_225_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_banana_slide_v1_v2w_force_095_315_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "banana_slide-v1_v2w_force_095",
+      "angle": "315",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/banana_slide-v1_v2w_force_095_angle_315.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/banana_slide-v1_v2w_force_095_angle_315.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/banana_slide-v1_v2w_force_095_angle_315_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_curling_v1_v2w_force_051_225_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "curling_v1_v2w_force_051",
+      "angle": "225",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/curling_v1_v2w_force_051_angle_225.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/curling_v1_v2w_force_051_angle_225.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/curling_v1_v2w_force_051_angle_225_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_sprite_v1_v2w_force_051_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "sprite_v1_v2w_force_051",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/sprite_v1_v2w_force_051_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/sprite_v1_v2w_force_051_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/sprite_v1_v2w_force_051_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_curling_v1_v2w_force_051_181_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "curling_v1_v2w_force_051",
+      "angle": "181",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/curling_v1_v2w_force_051_angle_181.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/curling_v1_v2w_force_051_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/curling_v1_v2w_force_051_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_cup_slide_v1_v2w_force_051_271_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "cup_slide-v1_v2w_force_051",
+      "angle": "271",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/cup_slide-v1_v2w_force_051_angle_271.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_271.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_271_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_cart_roll_v1_v2w_force_090_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "cart_roll_v1_v2w_force_090",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/cart_roll_v1_v2w_force_090_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/cart_roll_v1_v2w_force_090_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/cart_roll_v1_v2w_force_090_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_curling_v2_v2w_force_051_315_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "curling_v2_v2w_force_051",
+      "angle": "315",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/curling_v2_v2w_force_051_angle_315.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/curling_v2_v2w_force_051_angle_315.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/curling_v2_v2w_force_051_angle_315_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_plant_slide_v2_v2w_force_051_1_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "plant_slide-v2_v2w_force_051",
+      "angle": "1",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/plant_slide-v2_v2w_force_051_angle_1.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/plant_slide-v2_v2w_force_051_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/plant_slide-v2_v2w_force_051_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_sprite_v1_v2w_force_051_181_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "sprite_v1_v2w_force_051",
+      "angle": "181",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/sprite_v1_v2w_force_051_angle_181.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/sprite_v1_v2w_force_051_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/sprite_v1_v2w_force_051_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_couch_slide_v1_v2w_force_051_89_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "couch_slide_v1_v2w_force_051",
+      "angle": "89",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/couch_slide_v1_v2w_force_051_angle_89.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/couch_slide_v1_v2w_force_051_angle_89.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/couch_slide_v1_v2w_force_051_angle_89_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_bell_v1_v2w_force_051_271_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "bell_v1_v2w_force_051",
+      "angle": "271",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/bell_v1_v2w_force_051_angle_271.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/bell_v1_v2w_force_051_angle_271.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/bell_v1_v2w_force_051_angle_271_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_curling_v2_v2w_force_051_271_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "curling_v2_v2w_force_051",
+      "angle": "271",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/curling_v2_v2w_force_051_angle_271.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/curling_v2_v2w_force_051_angle_271.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/curling_v2_v2w_force_051_angle_271_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_materialexplaundrybasket1_v2w_force_051_260_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_materialexplaundrybasket1_v2w_force_051",
+      "angle": "260",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "force_prompting/force/_materialexplaundrybasket1_v2w_force_051_angle_260.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_260.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_260_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
+  },
+  {
+    "id": "fb_curling_v1_v2w_force_051_269_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "curling_v1_v2w_force_051",
+      "angle": "269",
+      "baseline": "force_prompting"
+    },
+    "videoA": {
+      "src": "physpropprior/force/curling_v1_v2w_force_051_angle_269.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "force_prompting/force/curling_v1_v2w_force_051_angle_269.mp4",
+      "method": "force_prompting"
+    },
+    "contextImage": "physpropprior/force/curling_v1_v2w_force_051_angle_269_force.png",
+    "contextCaption": "Arrow indicates the intended force direction."
   }
 ]

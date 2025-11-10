@@ -298,17 +298,27 @@
 
   function recordResponse(choice) {
     const question = state.questions[state.index];
-    state.responses[state.index] = {
+    const response = {
       questionId: question.id || `question_${state.index + 1}`,
+      fieldId: question.fieldId || question.field?.id || null,
+      fieldLabel: question.fieldLabel || question.field?.label || null,
+      dataset: question.dataset || null,
       axis: question.axis || null,
+      axisDetail: question.axisDetail || null,
       prompt: question.prompt || '',
       choice,
-      videoA: question.videoA ? { ...question.videoA } : null,
-      videoB: question.videoB ? { ...question.videoB } : null,
-      optionA: question.optionA ? { ...question.optionA } : null,
-      optionB: question.optionB ? { ...question.optionB } : null,
+      targetLevel: question.targetLevel || question.meta?.targetLevel || null,
+      meta: clone(question.meta),
+      videoA: clone(question.videoA),
+      videoB: clone(question.videoB),
+      optionA: clone(question.optionA),
+      optionB: clone(question.optionB),
       timestamp: new Date().toISOString(),
     };
+    if (question.field) {
+      response.field = clone(question.field);
+    }
+    state.responses[state.index] = response;
   }
 
   function highlightChoice(choice) {
@@ -398,9 +408,6 @@
   }
 
   function bindEvents() {
-    elements.choices.forEach((input) =>
-      input.addEventListener('change', handleChoice)
-    );
     elements.nextButton.addEventListener('click', goNext);
     elements.backButton.addEventListener('click', goBack);
     if (elements.participantForm) {
@@ -563,6 +570,13 @@
 
   function getChoiceInputs() {
     return Array.from(document.querySelectorAll('input[name="choice"]'));
+  }
+
+  function clone(value) {
+    if (value === undefined || value === null) {
+      return null;
+    }
+    return JSON.parse(JSON.stringify(value));
   }
 
   function start() {
