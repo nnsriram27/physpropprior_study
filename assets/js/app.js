@@ -16,9 +16,7 @@
     contextBlock: document.getElementById('contextBlock'),
     contextImage: document.getElementById('contextImage'),
     contextCaption: document.getElementById('contextCaption'),
-    videoA: document.getElementById('videoA'),
-    videoB: document.getElementById('videoB'),
-    choices: Array.from(document.querySelectorAll('input[name="choice"]')),
+    videoGrid: document.getElementById('videoGrid'),
     helper: document.getElementById('helperText'),
     backButton: document.getElementById('backButton'),
     nextButton: document.getElementById('nextButton'),
@@ -127,14 +125,8 @@
     elements.prompt.textContent = question.prompt || 'Question text missing.';
 
     toggleContext(question);
-    configureMedia(elements.videoA, question.videoA);
-    configureMedia(elements.videoB, question.videoB);
-
-    const previousResponse = state.responses[index]?.choice || null;
-    elements.choices.forEach((input) => {
-      input.checked = input.value === previousResponse;
-    });
-    highlightChoice(previousResponse);
+    const previousChoice = state.responses[index]?.choice || null;
+    renderOptions(question, previousChoice);
     updateNavState();
   }
 
@@ -149,6 +141,127 @@
       elements.contextCaption.textContent =
         contextCaption || 'Reference image for the applied forces.';
     }
+  }
+
+  function renderOptions(question, selectedChoice) {
+    if (!elements.videoGrid) {
+      return;
+    }
+    elements.videoGrid.innerHTML = '';
+    const options = deriveOptions(question);
+    options.forEach((option) => {
+      const card = document.createElement('article');
+      card.className = 'video-option';
+      card.dataset.choice = option.value;
+
+      const header = document.createElement('div');
+      header.className = 'option-header';
+      const label = document.createElement('p');
+      label.className = 'option-label';
+      label.textContent = option.title;
+      header.appendChild(label);
+      if (option.subtitle) {
+        const subtitle = document.createElement('p');
+        subtitle.className = 'option-subtitle';
+        subtitle.textContent = option.subtitle;
+        header.appendChild(subtitle);
+      }
+      card.appendChild(header);
+
+      if (option.clips.length > 0) {
+        const stack = document.createElement('div');
+        stack.className = 'clip-stack';
+        option.clips.forEach((clip) => {
+          const block = document.createElement('div');
+          block.className = 'clip-block';
+          if (clip.label) {
+            const clipLabel = document.createElement('p');
+            clipLabel.className = 'clip-label';
+            clipLabel.textContent = clip.label;
+            block.appendChild(clipLabel);
+          }
+          const videoEl = document.createElement('video');
+          configureMedia(videoEl, clip);
+          block.appendChild(videoEl);
+          stack.appendChild(block);
+        });
+        card.appendChild(stack);
+      }
+
+      const control = document.createElement('label');
+      control.className = 'choice-control';
+      const input = document.createElement('input');
+      input.type = 'radio';
+      input.name = 'choice';
+      input.value = option.value;
+      input.checked = option.value === selectedChoice;
+      control.appendChild(input);
+      const span = document.createElement('span');
+      span.textContent = `Select ${option.value}`;
+      control.appendChild(span);
+      card.appendChild(control);
+
+      elements.videoGrid.appendChild(card);
+    });
+
+    getChoiceInputs().forEach((input) => {
+      input.addEventListener('change', handleChoice);
+    });
+    highlightChoice(selectedChoice);
+  }
+
+  function deriveOptions(question) {
+    if (question.optionA && question.optionB) {
+      return [
+        normalizeOption('A', question.optionA),
+        normalizeOption('B', question.optionB),
+      ];
+    }
+    const defaults = [];
+    if (question.videoA) {
+      defaults.push(
+        normalizeOption('A', {
+          label: question.videoA.label || 'Video A',
+          clips: [question.videoA],
+        })
+      );
+    }
+    if (question.videoB) {
+      defaults.push(
+        normalizeOption('B', {
+          label: question.videoB.label || 'Video B',
+          clips: [question.videoB],
+        })
+      );
+    }
+    return defaults;
+  }
+
+  function normalizeOption(choiceValue, optionData = {}) {
+    const title = optionData.title
+      ? optionData.title
+      : `Option ${choiceValue}`;
+    const subtitle =
+      optionData.subtitle || optionData.label || optionData.method || '';
+    const clips = (optionData.clips || []).map((clip, index) => {
+      const label =
+        clip.label ||
+        clip.title ||
+        (clip.level
+          ? `${clip.level.toUpperCase()}`
+          : `Clip ${String.fromCharCode(65 + index)}`);
+      return {
+        ...clip,
+        label,
+      };
+    });
+
+    return {
+      value: choiceValue,
+      title,
+      subtitle,
+      clips,
+    };
   }
 
   function configureMedia(videoEl, meta = {}) {
@@ -192,6 +305,8 @@
       choice,
       videoA: question.videoA ? { ...question.videoA } : null,
       videoB: question.videoB ? { ...question.videoB } : null,
+      optionA: question.optionA ? { ...question.optionA } : null,
+      optionB: question.optionB ? { ...question.optionB } : null,
       timestamp: new Date().toISOString(),
     };
   }
@@ -364,7 +479,7 @@
   }
 
   function setControlsLocked(locked) {
-    elements.choices.forEach((choice) => {
+    getChoiceInputs().forEach((choice) => {
       choice.disabled = locked;
     });
     elements.backButton.disabled = locked || state.index === 0;
@@ -444,6 +559,10 @@
         elements.sendButton.disabled = false;
       }
     }
+  }
+
+  function getChoiceInputs() {
+    return Array.from(document.querySelectorAll('input[name="choice"]'));
   }
 
   function start() {

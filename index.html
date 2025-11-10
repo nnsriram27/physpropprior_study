@@ -49,41 +49,7 @@
         </div>
       </section>
 
-      <section class="video-grid">
-        <article class="video-option" data-choice="A">
-          <p class="option-label">Video A</p>
-          <video
-            id="videoA"
-            controls
-            preload="metadata"
-            playsinline
-            muted
-            autoplay
-            loop
-          ></video>
-          <label class="choice-control">
-            <input type="radio" name="choice" value="A" />
-            <span>Select A</span>
-          </label>
-        </article>
-
-        <article class="video-option" data-choice="B">
-          <p class="option-label">Video B</p>
-          <video
-            id="videoB"
-            controls
-            preload="metadata"
-            playsinline
-            muted
-            autoplay
-            loop
-          ></video>
-          <label class="choice-control">
-            <input type="radio" name="choice" value="B" />
-            <span>Select B</span>
-          </label>
-        </article>
-      </section>
+      <section class="video-grid" id="videoGrid"></section>
 
       <div class="control-bar">
         <button type="button" id="backButton" disabled>Back</button>

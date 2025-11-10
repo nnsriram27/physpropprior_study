@@ -1,2882 +1,3227 @@
 [
   {
-    "id": "pp_deformation_tennis_ball_bounce_2_v2w_high_deformable_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_ball_bounce_2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_2_v2w_high_deformable_p2",
+      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_tennis_ball_bounce_2_v2w_high_deformable_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_basketball_bounce_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_2_v2w_high_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_2_v2w_high_deformable_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_2_v2w_high_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_ball_bounce_2_v2w_high_deformable_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "ball_bounce_2_v2w_high_deformable_p2",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_ball_bounce_2_v2w_high_deformable_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_football_juggle_v1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "ball_bounce_2_v2w_high_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_ball_bounce_2_v2w_high_deformable_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "ball_bounce_2_v2w_high_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_ball_bounce_2_v2w_low_deformable_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "ball_bounce_2_v2w_low_deformable_p2",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_ball_bounce_2_v2w_low_deformable_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_football_juggle_v2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "ball_bounce_2_v2w_low_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_ball_bounce_2_v2w_low_deformable_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "ball_bounce_2_v2w_low_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v2_v2w_high_deformable_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v2_v2w_high_deformable_p1",
+      "scenarioKey": "football_juggle_v2_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_football_juggle_v2_v2w_high_deformable_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_girl_yogaball_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "football_juggle_v2_v2w_high_deformable_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v2_v2w_high_deformable_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v2_v2w_high_deformable_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_3_v2w_low_deformable_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_low_deformable_p2",
+      "scenarioKey": "girl_yogaball_v1_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_tennis_ball_bounce_3_v2w_low_deformable_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_girl_yogaball_v2_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_low_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_3_v2w_low_deformable_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_low_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v1_v2w_low_deformable_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v1_v2w_low_deformable_p1",
+      "scenarioKey": "girl_yogaball_v2_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_football_juggle_v1_v2w_low_deformable_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_piston_pressure_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "football_juggle_v1_v2w_low_deformable_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v1_v2w_low_deformable_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v1_v2w_low_deformable_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v1_low_deform_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v1_low_deform_p2",
+      "scenarioKey": "piston_pressure_v1_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/trampoline_v1_low_deform_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_trampoline_v1_low_deform_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_piston_pressure_v2_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "trampoline_v1_low_deform_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/trampoline_v1_low_deform_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v1_low_deform_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v1_low_deform_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/trampoline_v1_low_deform_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_rubber_duck1_v2w_high_deformable_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "rubber_duck1_v2w_high_deformable_p2",
+      "scenarioKey": "piston_pressure_v2_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_rubber_duck1_v2w_high_deformable_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_piston_pressure_v3_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "rubber_duck1_v2w_high_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_rubber_duck1_v2w_high_deformable_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "rubber_duck1_v2w_high_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v3_high_deform_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v3_high_deform_p1",
+      "scenarioKey": "piston_pressure_v3_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_piston_pressure_v3_high_deform_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_rubber_duck1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "piston_pressure_v3_high_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v3_high_deform_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v3_high_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v2_high_deformable_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v2_high_deformable_p2",
+      "scenarioKey": "rubber_duck1_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/trampoline_v2_high_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_trampoline_v2_high_deformable_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_tennis_ball_bounce_2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "trampoline_v2_high_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/trampoline_v2_high_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v2_high_deformable_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v2_high_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/trampoline_v2_high_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_3_v2w_high_deformable_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_high_deformable_p2",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_tennis_ball_bounce_3_v2w_high_deformable_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_tennis_ball_bounce_3_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_high_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_3_v2w_high_deformable_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_high_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v1_low_deform_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v1_low_deform_p1",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_girl_yogaball_v1_low_deform_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_trampoline_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "girl_yogaball_v1_low_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v1_low_deform_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v1_low_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v1_v2w_high_deformable_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v1_v2w_high_deformable_p1",
+      "scenarioKey": "trampoline_v1_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_football_juggle_v1_v2w_high_deformable_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_trampoline_v2_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "football_juggle_v1_v2w_high_deformable_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v1_v2w_high_deformable_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v1_v2w_high_deformable_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_football_juggle_v2_v2w_low_deformable_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "football_juggle_v2_v2w_low_deformable_p1",
+      "scenarioKey": "trampoline_v2_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_football_juggle_v2_v2w_low_deformable_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_ball_bounce_2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "football_juggle_v2_v2w_low_deformable_p1",
+      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_football_juggle_v2_v2w_low_deformable_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_basketball_bounce_v1_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "football_juggle_v2_v2w_low_deformable_p1",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_football_juggle_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_football_juggle_v2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "football_juggle_v2_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_girl_yogaball_v1_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "girl_yogaball_v1_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_girl_yogaball_v2_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "girl_yogaball_v2_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_piston_pressure_v1_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "piston_pressure_v1_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_piston_pressure_v2_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "piston_pressure_v2_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/piston_pressure_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/piston_pressure_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_piston_pressure_v3_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "piston_pressure_v3_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_rubber_duck1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "rubber_duck1_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_tennis_ball_bounce_2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_tennis_ball_bounce_3_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_trampoline_v1_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "trampoline_v1_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_trampoline_v2_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "trampoline_v2_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_ball_bounce_2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "cosmos2B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "method": "cosmos2B"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_basketball_bounce_v1_high_deform_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_deformation_basketball_bounce_v1_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenario": "basketball_bounce_v1_high_deform_p2",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_football_juggle_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_football_juggle_v2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "football_juggle_v2_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_girl_yogaball_v1_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "girl_yogaball_v1_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_girl_yogaball_v2_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "girl_yogaball_v2_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_piston_pressure_v1_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "piston_pressure_v1_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_piston_pressure_v2_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "piston_pressure_v2_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_piston_pressure_v3_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "piston_pressure_v3_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_rubber_duck1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "rubber_duck1_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_tennis_ball_bounce_2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_tennis_ball_bounce_3_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_trampoline_v1_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "trampoline_v1_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_deformation_trampoline_v2_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "trampoline_v2_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_restitution_ball_bounce_2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
+    "meta": {
+      "attribute": "restitution",
+      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_basketball_bounce_v1_high_deform_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "id": "ppset_restitution_ball_roll_v1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "basketball_bounce_v1_high_deform_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_basketball_bounce_v1_high_deform_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "basketball_bounce_v1_high_deform_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v2_high_deform_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_high_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "ball_roll-v1_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_girl_yogaball_v2_high_deform_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "id": "ppset_restitution_ball_roll_v2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_high_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v2_high_deform_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_high_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v2_low_deform_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v2_low_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "ball_roll-v2_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/piston_pressure_v2_low_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v2_low_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_piston_pressure_v2_low_deform_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_ball_roll_v3_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v2_low_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v2_low_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/piston_pressure_v2_low_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v2_low_deform_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v2_low_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v2_low_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/piston_pressure_v2_low_deform_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v1_high_deform_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v1_high_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "ball_roll-v3_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/piston_pressure_v1_high_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v1_high_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_piston_pressure_v1_high_deform_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "id": "ppset_restitution_basketball_bounce_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v1_high_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v1_high_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/piston_pressure_v1_high_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v1_high_deform_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v1_high_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/piston_pressure_v1_high_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v1_high_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v2_high_deform_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v2_high_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/piston_pressure_v2_high_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v2_high_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_piston_pressure_v2_high_deform_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "id": "ppset_restitution_football_juggle_v1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v2_high_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v2_high_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/piston_pressure_v2_high_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v2_high_deform_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v2_high_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/piston_pressure_v2_high_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v2_high_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v1_high_deform_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v1_high_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_girl_yogaball_v1_high_deform_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "id": "ppset_restitution_rubber_duck1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v1_high_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v1_high_deform_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v1_high_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v1_high_deform_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v1_high_deform_p2",
+      "attribute": "restitution",
+      "scenarioKey": "rubber_duck1_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/trampoline_v1_high_deform_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_trampoline_v1_high_deform_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "id": "ppset_restitution_tennis_ball_bounce_2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v1_high_deform_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/trampoline_v1_high_deform_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v1_high_deform_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v1_high_deform_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/trampoline_v1_high_deform_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v3_low_deform_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v3_low_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/piston_pressure_v3_low_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_piston_pressure_v3_low_deform_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_tennis_ball_bounce_3_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v3_low_deform_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/deformation/piston_pressure_v3_low_deform_p1.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v3_low_deform_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v3_low_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/piston_pressure_v3_low_deform_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_rubber_duck1_v2w_low_deformable_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "rubber_duck1_v2w_low_deformable_p2",
+      "attribute": "restitution",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_rubber_duck1_v2w_low_deformable_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_trampoline_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "rubber_duck1_v2w_low_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_rubber_duck1_v2w_low_deformable_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "rubber_duck1_v2w_low_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_2_v2w_low_deformable_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_2_v2w_low_deformable_p2",
+      "attribute": "restitution",
+      "scenarioKey": "trampoline_v1_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/trampoline_v1_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/trampoline_v1_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v1_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_tennis_ball_bounce_2_v2w_low_deformable_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_trampoline_v2_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_2_v2w_low_deformable_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_tennis_ball_bounce_2_v2w_low_deformable_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_2_v2w_low_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_girl_yogaball_v2_low_deform_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_low_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "trampoline_v2_{lvl}",
       "baseline": "baseline_text_conditioned"
     },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_girl_yogaball_v2_low_deform_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_ball_bounce_2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_low_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "method": "cogvideox5B"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_girl_yogaball_v2_low_deform_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_ball_roll_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_low_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_basketball_bounce_v1_low_deform_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "basketball_bounce_v1_low_deform_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_basketball_bounce_v1_low_deform_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "basketball_bounce_v1_low_deform_p2",
+      "attribute": "restitution",
+      "scenarioKey": "ball_roll-v1_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_basketball_bounce_v1_low_deform_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_ball_roll_v2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "basketball_bounce_v1_low_deform_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v2_low_deformable_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v2_low_deformable_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_deformation_trampoline_v2_low_deformable_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v2_low_deformable_p2",
+      "attribute": "restitution",
+      "scenarioKey": "ball_roll-v2_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_trampoline_v2_low_deformable_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "id": "ppset_restitution_ball_roll_v3_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
-      "attribute": "deformation",
-      "scenario": "trampoline_v2_low_deformable_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v1_low_deform_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v1_low_deform_p1",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/deformation/piston_pressure_v1_low_deform_p1.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_deformation_piston_pressure_v1_low_deform_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v1_low_deform_p1",
+      "attribute": "restitution",
+      "scenarioKey": "ball_roll-v3_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/deformation/piston_pressure_v1_low_deform_p1.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_deformation_piston_pressure_v1_low_deform_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "deformation",
-      "scenario": "piston_pressure_v1_low_deform_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/piston_pressure_v1_low_deform_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_football_juggle_v1_v2w_high_bounce_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_basketball_bounce_v1_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "football_juggle_v1_v2w_high_bounce_p1",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_football_juggle_v1_v2w_high_bounce_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "football_juggle_v1_v2w_high_bounce_p1",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cogvideox5B/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
-      "method": "cogvideox5B"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_football_juggle_v1_v2w_high_bounce_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_football_juggle_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "football_juggle_v1_v2w_high_bounce_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_basketball_bounce_v1_high_bounce_p1_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "basketball_bounce_v1_high_bounce_p1",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_basketball_bounce_v1_high_bounce_p1_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "basketball_bounce_v1_high_bounce_p1",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_basketball_bounce_v1_high_bounce_p1_high_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_rubber_duck1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "basketball_bounce_v1_high_bounce_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_trampoline_v2_high_bounce_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "trampoline_v2_high_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/trampoline_v2_high_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_trampoline_v2_high_bounce_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "trampoline_v2_high_bounce_p2",
+      "scenarioKey": "rubber_duck1_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/restitution/trampoline_v2_high_bounce_p2.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_trampoline_v2_high_bounce_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_tennis_ball_bounce_2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "trampoline_v2_high_bounce_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/trampoline_v2_high_bounce_p2.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_bounce_2_v2w_low_bounce_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_bounce_2_v2w_low_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_bounce_2_v2w_low_bounce_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_bounce_2_v2w_low_bounce_p2",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "cogvideox5B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "cogvideox5B"
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_ball_bounce_2_v2w_low_bounce_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_tennis_ball_bounce_3_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "ball_bounce_2_v2w_low_bounce_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v3_v2w_low_bounce_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v3_v2w_low_bounce",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v3_v2w_low_bounce_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v3_v2w_low_bounce",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cogvideox5B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-      "method": "cogvideox5B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_ball_roll_v3_v2w_low_bounce_low_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_trampoline_v1_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "ball_roll-v3_v2w_low_bounce",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_basketball_bounce_v1_low_bounce_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "basketball_bounce_v1_low_bounce_p1",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_basketball_bounce_v1_low_bounce_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "basketball_bounce_v1_low_bounce_p1",
+      "scenarioKey": "trampoline_v1_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v1_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cogvideox5B/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
-      "method": "cogvideox5B"
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/trampoline_v1_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/trampoline_v1_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_basketball_bounce_v1_low_bounce_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_trampoline_v2_lvl_cogvideox5B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "basketball_bounce_v1_low_bounce_p1",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_2_v2w_low_bounce_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_2_v2w_low_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_2_v2w_low_bounce_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_2_v2w_low_bounce_p2",
+      "scenarioKey": "trampoline_v2_{lvl}",
       "baseline": "cogvideox5B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "cogvideox5B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_tennis_ball_bounce_2_v2w_low_bounce_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_ball_bounce_2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_2_v2w_low_bounce_p2",
+      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "cosmos2B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "cosmos2B"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_ball_roll_v1_v2w_high_bounce_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_ball_roll_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "ball_roll-v1_v2w_high_bounce",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v1_v2w_high_bounce_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v1_v2w_high_bounce",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v1_v2w_high_bounce_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v1_v2w_high_bounce",
+      "scenarioKey": "ball_roll-v1_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cosmos2B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-      "method": "cosmos2B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_ball_roll_v3_v2w_high_bounce_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_ball_roll_v2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "ball_roll-v3_v2w_high_bounce",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v3_v2w_high_bounce_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v3_v2w_high_bounce",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v3_v2w_high_bounce_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v3_v2w_high_bounce",
+      "scenarioKey": "ball_roll-v2_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "cosmos2B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "method": "cosmos2B"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_football_juggle_v1_v2w_low_bounce_p1_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_ball_roll_v3_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "football_juggle_v1_v2w_low_bounce_p1",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_football_juggle_v1_v2w_low_bounce_p1_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "football_juggle_v1_v2w_low_bounce_p1",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_football_juggle_v1_v2w_low_bounce_p1_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "football_juggle_v1_v2w_low_bounce_p1",
+      "scenarioKey": "ball_roll-v3_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cosmos2B/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "method": "cosmos2B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_ball_roll_v2_v2w_high_bounce_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_basketball_bounce_v1_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "ball_roll-v2_v2w_high_bounce",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v2_v2w_high_bounce_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v2_v2w_high_bounce",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v2_v2w_high_bounce_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v2_v2w_high_bounce",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "cosmos2B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "method": "cosmos2B"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_tennis_ball_bounce_2_v2w_high_bounce_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_football_juggle_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_2_v2w_high_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_2_v2w_high_bounce_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_2_v2w_high_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_2_v2w_high_bounce_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_2_v2w_high_bounce_p2",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cosmos2B/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "cosmos2B"
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_tennis_ball_bounce_3_v2w_low_bounce_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_rubber_duck1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_low_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_3_v2w_low_bounce_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_low_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "cogvideox5B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_3_v2w_low_bounce_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_low_bounce_p2",
+      "scenarioKey": "rubber_duck1_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "method": "cosmos2B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_ball_roll_v2_v2w_low_bounce_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_tennis_ball_bounce_2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "ball_roll-v2_v2w_low_bounce",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v2_v2w_low_bounce_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v2_v2w_low_bounce",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v2_v2w_low_bounce_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v2_v2w_low_bounce",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "cosmos2B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "method": "cosmos2B"
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_rubber_duck1_v2w_high_bounce_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_tennis_ball_bounce_3_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_high_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_rubber_duck1_v2w_high_bounce_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_high_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_rubber_duck1_v2w_high_bounce_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_high_bounce_p2",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cosmos2B/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
-      "method": "cosmos2B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_tennis_ball_bounce_3_v2w_high_bounce_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_trampoline_v1_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_high_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_3_v2w_high_bounce_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_high_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_tennis_ball_bounce_3_v2w_high_bounce_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_high_bounce_p2",
+      "scenarioKey": "trampoline_v1_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/trampoline_v1_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/trampoline_v1_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "method": "cosmos2B"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v1_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   },
   {
-    "id": "pp_restitution_rubber_duck1_v2w_low_bounce_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
+    "id": "ppset_restitution_trampoline_v2_lvl_cosmos2B",
+    "axis": "Physical realism",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_low_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_rubber_duck1_v2w_low_bounce_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_low_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_rubber_duck1_v2w_low_bounce_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_low_bounce_p2",
+      "scenarioKey": "trampoline_v2_{lvl}",
       "baseline": "cosmos2B"
     },
-    "videoA": {
-      "src": "cosmos2B/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "method": "cosmos2B"
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     },
-    "videoB": {
-      "src": "physpropprior/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v1_v2w_low_bounce_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v1_v2w_low_bounce",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "method": "baseline_text_conditioned"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v1_v2w_low_bounce_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v1_v2w_low_bounce",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_roll_v1_v2w_low_bounce_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_roll-v1_v2w_low_bounce",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_bounce_2_v2w_high_bounce_p2_high_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_bounce_2_v2w_high_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_bounce_2_v2w_high_bounce_p2_high_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_bounce_2_v2w_high_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_ball_bounce_2_v2w_high_bounce_p2_high_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "ball_bounce_2_v2w_high_bounce_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "method": "cosmos2B"
-    }
-  },
-  {
-    "id": "pp_restitution_trampoline_v2_low_bounce_p2_low_baseline_text_conditioned",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "trampoline_v2_low_bounce_p2",
-      "baseline": "baseline_text_conditioned"
-    },
-    "videoA": {
-      "src": "baseline_text_conditioned/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    }
-  },
-  {
-    "id": "pp_restitution_trampoline_v2_low_bounce_p2_low_cogvideox5B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "trampoline_v2_low_bounce_p2",
-      "baseline": "cogvideox5B"
-    },
-    "videoA": {
-      "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "cogvideox5B/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "method": "cogvideox5B"
-    }
-  },
-  {
-    "id": "pp_restitution_trampoline_v2_low_bounce_p2_low_cosmos2B",
-    "axis": "Physical plausibility",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "attribute": "restitution",
-      "scenario": "trampoline_v2_low_bounce_p2",
-      "baseline": "cosmos2B"
-    },
-    "videoA": {
-      "src": "cosmos2B/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "method": "physpropprior"
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
     }
   }
 ]
