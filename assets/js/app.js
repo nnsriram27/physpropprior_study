@@ -158,15 +158,9 @@
       header.className = 'option-header';
       const label = document.createElement('p');
       label.className = 'option-label';
-      label.textContent = option.title;
+      label.textContent = `Option ${option.value}`;
       header.appendChild(label);
-      if (option.subtitle) {
-        const subtitle = document.createElement('p');
-        subtitle.className = 'option-subtitle';
-        subtitle.textContent = option.subtitle;
-        header.appendChild(subtitle);
-      }
-      card.appendChild(header);
+    card.appendChild(header);
 
       if (option.clips.length > 0) {
         const stack = document.createElement('div');
@@ -238,11 +232,7 @@
   }
 
   function normalizeOption(choiceValue, optionData = {}) {
-    const title = optionData.title
-      ? optionData.title
-      : `Option ${choiceValue}`;
-    const subtitle =
-      optionData.subtitle || optionData.label || optionData.method || '';
+    const title = `Option ${choiceValue}`;
     const clips = (optionData.clips || []).map((clip, index) => {
       const label =
         clip.label ||
@@ -259,7 +249,7 @@
     return {
       value: choiceValue,
       title,
-      subtitle,
+      subtitle: null,
       clips,
     };
   }
