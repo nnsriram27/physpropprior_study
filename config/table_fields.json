@@ -62,6 +62,19 @@
     }
   },
   {
+    "id": "controllability_cosmos2B_friction",
+    "label": "Controllability — Base Model (Friction)",
+    "axis": "controllability",
+    "method": "cosmos2B",
+    "attribute": "friction",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "cosmos2B",
+      "meta.attribute": "friction"
+    }
+  },
+  {
     "id": "physical_cosmos2B_restitution",
     "label": "Physical Realism — Base Model (Restitution)",
     "axis": "physical_realism",
@@ -97,6 +110,19 @@
     "questions": 2,
     "filters": {
       "meta.baseline": "cosmos2B"
+    }
+  },
+  {
+    "id": "physical_cosmos2B_friction",
+    "label": "Physical Realism — Base Model (Friction)",
+    "axis": "physical_realism",
+    "method": "cosmos2B",
+    "attribute": "friction",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cosmos2B",
+      "meta.attribute": "friction"
     }
   },
   {
@@ -138,6 +164,19 @@
     }
   },
   {
+    "id": "controllability_baseline_text_conditioned_friction",
+    "label": "Controllability — Ours (Text) (Friction)",
+    "axis": "controllability",
+    "method": "baseline_text_conditioned",
+    "attribute": "friction",
+    "dataset": "control_fidelity",
+    "questions": 2,
+    "filters": {
+      "meta.method": "baseline_text_conditioned",
+      "meta.attribute": "friction"
+    }
+  },
+  {
     "id": "physical_baseline_text_conditioned_restitution",
     "label": "Physical Realism — Ours (Text) (Restitution)",
     "axis": "physical_realism",
@@ -173,6 +212,19 @@
     "questions": 2,
     "filters": {
       "meta.baseline": "baseline_text_conditioned"
+    }
+  },
+  {
+    "id": "physical_baseline_text_conditioned_friction",
+    "label": "Physical Realism — Ours (Text) (Friction)",
+    "axis": "physical_realism",
+    "method": "baseline_text_conditioned",
+    "attribute": "friction",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "baseline_text_conditioned",
+      "meta.attribute": "friction"
     }
   },
   {

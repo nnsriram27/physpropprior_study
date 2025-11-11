@@ -660,6 +660,186 @@
     }
   },
   {
+    "id": "cf_baseline_text_conditioned_friction_materialexpcube1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "materialexpcube1_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/_materialexpcube1_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/_materialexpcube1_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_banana_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "banana_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/banana_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/banana_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_cart_roll_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "cart_roll_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/cart_roll_v1_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/cart_roll_v1_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_couch_slide_v1_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "couch_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/couch_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/couch_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_couch_slide_v2_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "couch_slide_v2_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/couch_slide-v2_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/couch_slide-v2_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_cup_slide_v1_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "cup_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/cup_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/cup_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_laundrybasket1_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "laundrybasket1_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/laundrybasket1_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/laundrybasket1_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_plant_slide_v2_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "plant_slide_v2_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/plant_slide-v2_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/plant_slide-v2_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_baseline_text_conditioned_friction_sandpaper_cube_slide_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "baseline_text_conditioned",
+      "attribute": "friction",
+      "scenario": "sandpaper_cube_slide_v2w_friction"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
     "id": "cf_baseline_text_conditioned_deformation_ball_bounce_2_v2w_deformable_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
@@ -680,51 +860,51 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_basketball_bounce_v1_deform_p1_high",
+    "id": "cf_baseline_text_conditioned_deformation_basketball_bounce_v1_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
       "scenario": "basketball_bounce_v1_deform_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_basketball_bounce_v1_deform_p2_high",
+    "id": "cf_baseline_text_conditioned_deformation_basketball_bounce_v1_deform_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
       "scenario": "basketball_bounce_v1_deform_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p2.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_dumbell_beanbag_deform_p1_low",
+    "id": "cf_baseline_text_conditioned_deformation_dumbell_beanbag_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -760,11 +940,11 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_football_juggle_v2_v2w_deformable_p1_low",
+    "id": "cf_baseline_text_conditioned_deformation_football_juggle_v2_v2w_deformable_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -780,11 +960,11 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_football_juggle_v3_v2w_deformable_p1_low",
+    "id": "cf_baseline_text_conditioned_deformation_football_juggle_v3_v2w_deformable_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -800,23 +980,23 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_girl_yogaball_v1_deform_p1_low",
+    "id": "cf_baseline_text_conditioned_deformation_girl_yogaball_v1_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
       "scenario": "girl_yogaball_v1_deform_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
@@ -831,40 +1011,40 @@
       "scenario": "girl_yogaball_v2_deform_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_kettlebell_pillow_deform_p1_high",
+    "id": "cf_baseline_text_conditioned_deformation_kettlebell_pillow_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
       "scenario": "kettlebell_pillow_deform_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/kettlebell_pillow_high_deform_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/kettlebell_pillow_low_deform_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/kettlebell_pillow_high_deform_p1.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_piston_pressure_v1_deform_p1_low",
+    "id": "cf_baseline_text_conditioned_deformation_piston_pressure_v1_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -900,11 +1080,11 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_piston_pressure_v3_deform_p1_high",
+    "id": "cf_baseline_text_conditioned_deformation_piston_pressure_v3_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -931,12 +1111,12 @@
       "scenario": "rubber_duck1_v2w_deformable_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -951,12 +1131,12 @@
       "scenario": "tennis_ball_bounce_2_v2w_deformable_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -971,40 +1151,40 @@
       "scenario": "tennis_ball_bounce_3_v2w_deformable_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_tire_rolling_v1_deform_p1_high",
+    "id": "cf_baseline_text_conditioned_deformation_tire_rolling_v1_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
       "scenario": "tire_rolling_v1_deform_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/deformation/tire_rolling_v1_high_deform_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/deformation/tire_rolling_v1_low_deform_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/deformation/tire_rolling_v1_high_deform_p1.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_trampoline_v1_deform_p2_low",
+    "id": "cf_baseline_text_conditioned_deformation_trampoline_v1_deform_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -1020,11 +1200,11 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_deformation_trampoline_v2_deformable_p2_low",
+    "id": "cf_baseline_text_conditioned_deformation_trampoline_v2_deformable_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "deformation",
@@ -1040,11 +1220,11 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_restitution_ball_bounce_2_v2w_bounce_p2_high",
+    "id": "cf_baseline_text_conditioned_restitution_ball_bounce_2_v2w_bounce_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "restitution",
@@ -1060,11 +1240,11 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_restitution_ball_roll_v1_v2w_bounce_low",
+    "id": "cf_baseline_text_conditioned_restitution_ball_roll_v1_v2w_bounce_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "restitution",
@@ -1111,12 +1291,12 @@
       "scenario": "ball_roll_v3_v2w_bounce"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_low_bounce.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+      "level": "high"
     }
   },
   {
@@ -1131,12 +1311,12 @@
       "scenario": "basketball_bounce_v1_bounce_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+      "level": "high"
     }
   },
   {
@@ -1151,20 +1331,20 @@
       "scenario": "football_juggle_v1_v2w_bounce_p1"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+      "level": "low"
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_restitution_football_juggle_v2_v2w_bounce_p1_low",
+    "id": "cf_baseline_text_conditioned_restitution_football_juggle_v2_v2w_bounce_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "restitution",
@@ -1211,12 +1391,12 @@
       "scenario": "rubber_duck1_v2w_bounce_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -1231,12 +1411,12 @@
       "scenario": "tennis_ball_bounce_2_v2w_bounce_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+      "level": "high"
     }
   },
   {
@@ -1251,12 +1431,12 @@
       "scenario": "tennis_ball_bounce_3_v2w_bounce_p2"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -1280,31 +1460,211 @@
     }
   },
   {
-    "id": "cf_baseline_text_conditioned_restitution_trampoline_v2_bounce_p2_high",
+    "id": "cf_baseline_text_conditioned_restitution_trampoline_v2_bounce_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "baseline_text_conditioned",
       "attribute": "restitution",
       "scenario": "trampoline_v2_bounce_p2"
     },
     "videoA": {
+      "src": "baseline_text_conditioned/restitution/trampoline_v2_high_bounce_p2.mp4",
+      "level": "high"
+    },
+    "videoB": {
       "src": "baseline_text_conditioned/restitution/trampoline_v2_low_bounce_p2.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_materialexpcube1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "materialexpcube1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/_materialexpcube1_v2w_low_friction.mp4",
       "level": "low"
     },
     "videoB": {
-      "src": "baseline_text_conditioned/restitution/trampoline_v2_high_bounce_p2.mp4",
+      "src": "cogvideox5B/friction/_materialexpcube1_v2w_high_friction.mp4",
       "level": "high"
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_ball_bounce_2_v2w_deformable_p2_high",
+    "id": "cf_cogvideox5B_friction_banana_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "banana_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/banana_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/banana_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_cart_roll_v1_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "cart_roll_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/cart_roll_v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/cart_roll_v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_couch_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "couch_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/couch_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/couch_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_couch_slide_v2_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "couch_slide_v2_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/couch_slide-v2_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/couch_slide-v2_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_cup_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "cup_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/cup_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/cup_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_laundrybasket1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "laundrybasket1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/laundrybasket1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/laundrybasket1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_plant_slide_v2_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "plant_slide_v2_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/plant_slide-v2_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/plant_slide-v2_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_friction_sandpaper_cube_slide_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "friction",
+      "scenario": "sandpaper_cube_slide_v2w_friction"
+    },
+    "videoA": {
+      "src": "cogvideox5B/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "cogvideox5B/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_deformation_ball_bounce_2_v2w_deformable_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
@@ -1351,32 +1711,32 @@
       "scenario": "basketball_bounce_v1_deform_p2"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+      "level": "low"
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_dumbell_beanbag_deform_p1_high",
+    "id": "cf_cogvideox5B_deformation_dumbell_beanbag_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
       "scenario": "dumbell_beanbag_deform_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/dumbell_beanbag_high_deform_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/dumbell_beanbag_low_deform_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/dumbell_beanbag_high_deform_p1.mp4",
+      "level": "high"
     }
   },
   {
@@ -1391,12 +1751,12 @@
       "scenario": "football_juggle_v1_v2w_deformable_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+      "level": "high"
     }
   },
   {
@@ -1411,20 +1771,20 @@
       "scenario": "football_juggle_v2_v2w_deformable_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
+      "level": "low"
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_football_juggle_v3_v2w_deformable_p1_high",
+    "id": "cf_cogvideox5B_deformation_football_juggle_v3_v2w_deformable_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
@@ -1451,36 +1811,16 @@
       "scenario": "girl_yogaball_v1_deform_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
       "level": "low"
-    }
-  },
-  {
-    "id": "cf_cogvideox5B_deformation_girl_yogaball_v2_deform_p1_low",
-    "axis": "Control fidelity",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
-    "meta": {
-      "method": "cogvideox5B",
-      "attribute": "deformation",
-      "scenario": "girl_yogaball_v2_deform_p1"
-    },
-    "videoA": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-      "level": "high"
     },
     "videoB": {
-      "src": "cogvideox5B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "level": "low"
+      "src": "cogvideox5B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_kettlebell_pillow_deform_p1_high",
+    "id": "cf_cogvideox5B_deformation_girl_yogaball_v2_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
     "prompt": "Which video better matches the HIGH Deformation target?",
@@ -1488,15 +1828,35 @@
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
-      "scenario": "kettlebell_pillow_deform_p1"
+      "scenario": "girl_yogaball_v2_deform_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/kettlebell_pillow_low_deform_p1.mp4",
+      "src": "cogvideox5B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
       "level": "low"
     },
     "videoB": {
+      "src": "cogvideox5B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_deformation_kettlebell_pillow_deform_p1_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Deformation",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "deformation",
+      "scenario": "kettlebell_pillow_deform_p1"
+    },
+    "videoA": {
       "src": "cogvideox5B/deformation/kettlebell_pillow_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/kettlebell_pillow_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
@@ -1520,11 +1880,11 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_piston_pressure_v2_deform_p1_low",
+    "id": "cf_cogvideox5B_deformation_piston_pressure_v2_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
@@ -1540,11 +1900,11 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_piston_pressure_v3_deform_p1_high",
+    "id": "cf_cogvideox5B_deformation_piston_pressure_v3_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
@@ -1560,11 +1920,11 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_rubber_duck1_v2w_deformable_p2_high",
+    "id": "cf_cogvideox5B_deformation_rubber_duck1_v2w_deformable_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
@@ -1580,23 +1940,23 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_tennis_ball_bounce_2_v2w_deformable_p2_high",
+    "id": "cf_cogvideox5B_deformation_tennis_ball_bounce_2_v2w_deformable_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
       "scenario": "tennis_ball_bounce_2_v2w_deformable_p2"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -1651,20 +2011,20 @@
       "scenario": "trampoline_v1_deform_p2"
     },
     "videoA": {
-      "src": "cogvideox5B/deformation/trampoline_v1_high_deform_p2.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cogvideox5B/deformation/trampoline_v1_low_deform_p2.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/deformation/trampoline_v1_high_deform_p2.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_cogvideox5B_deformation_trampoline_v2_deformable_p2_low",
+    "id": "cf_cogvideox5B_deformation_trampoline_v2_deformable_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "deformation",
@@ -1700,11 +2060,11 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_restitution_ball_roll_v1_v2w_bounce_high",
+    "id": "cf_cogvideox5B_restitution_ball_roll_v1_v2w_bounce_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "restitution",
@@ -1720,23 +2080,23 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_restitution_ball_roll_v2_v2w_bounce_low",
+    "id": "cf_cogvideox5B_restitution_ball_roll_v2_v2w_bounce_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "restitution",
       "scenario": "ball_roll_v2_v2w_bounce"
     },
     "videoA": {
-      "src": "cogvideox5B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cogvideox5B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cogvideox5B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+      "level": "low"
     }
   },
   {
@@ -1771,12 +2131,12 @@
       "scenario": "basketball_bounce_v1_bounce_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cogvideox5B/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
+      "level": "high"
     }
   },
   {
@@ -1811,36 +2171,16 @@
       "scenario": "football_juggle_v2_v2w_bounce_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/restitution/football_juggle_v2_v2w_low_bounce_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cogvideox5B/restitution/football_juggle_v2_v2w_high_bounce_p1.mp4",
       "level": "high"
-    }
-  },
-  {
-    "id": "cf_cogvideox5B_restitution_football_juggle_v3_v2w_bounce_p1_high",
-    "axis": "Control fidelity",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
-    "meta": {
-      "method": "cogvideox5B",
-      "attribute": "restitution",
-      "scenario": "football_juggle_v3_v2w_bounce_p1"
-    },
-    "videoA": {
-      "src": "cogvideox5B/restitution/football_juggle_v3_v2w_low_bounce_p1.mp4",
-      "level": "low"
     },
     "videoB": {
-      "src": "cogvideox5B/restitution/football_juggle_v3_v2w_high_bounce_p1.mp4",
-      "level": "high"
+      "src": "cogvideox5B/restitution/football_juggle_v2_v2w_low_bounce_p1.mp4",
+      "level": "low"
     }
   },
   {
-    "id": "cf_cogvideox5B_restitution_rubber_duck1_v2w_bounce_p2_low",
+    "id": "cf_cogvideox5B_restitution_football_juggle_v3_v2w_bounce_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
     "prompt": "Which video better matches the LOW Bounce target?",
@@ -1848,23 +2188,43 @@
     "meta": {
       "method": "cogvideox5B",
       "attribute": "restitution",
-      "scenario": "rubber_duck1_v2w_bounce_p2"
+      "scenario": "football_juggle_v3_v2w_bounce_p1"
     },
     "videoA": {
-      "src": "cogvideox5B/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+      "src": "cogvideox5B/restitution/football_juggle_v3_v2w_high_bounce_p1.mp4",
       "level": "high"
     },
     "videoB": {
-      "src": "cogvideox5B/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+      "src": "cogvideox5B/restitution/football_juggle_v3_v2w_low_bounce_p1.mp4",
       "level": "low"
     }
   },
   {
-    "id": "cf_cogvideox5B_restitution_tennis_ball_bounce_2_v2w_bounce_p2_high",
+    "id": "cf_cogvideox5B_restitution_rubber_duck1_v2w_bounce_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
     "prompt": "Which video better matches the HIGH Bounce target?",
     "targetLevel": "high",
+    "meta": {
+      "method": "cogvideox5B",
+      "attribute": "restitution",
+      "scenario": "rubber_duck1_v2w_bounce_p2"
+    },
+    "videoA": {
+      "src": "cogvideox5B/restitution/rubber_duck1_v2w_low_bounce_p2.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cogvideox5B/restitution/rubber_duck1_v2w_high_bounce_p2.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cogvideox5B_restitution_tennis_ball_bounce_2_v2w_bounce_p2_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Bounce",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "restitution",
@@ -1920,22 +2280,202 @@
     }
   },
   {
-    "id": "cf_cogvideox5B_restitution_trampoline_v2_bounce_p2_low",
+    "id": "cf_cogvideox5B_restitution_trampoline_v2_bounce_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cogvideox5B",
       "attribute": "restitution",
       "scenario": "trampoline_v2_bounce_p2"
     },
     "videoA": {
+      "src": "cogvideox5B/restitution/trampoline_v2_high_bounce_p2.mp4",
+      "level": "high"
+    },
+    "videoB": {
       "src": "cogvideox5B/restitution/trampoline_v2_low_bounce_p2.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_materialexpcube1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "materialexpcube1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/_materialexpcube1_v2w_low_friction.mp4",
       "level": "low"
     },
     "videoB": {
-      "src": "cogvideox5B/restitution/trampoline_v2_high_bounce_p2.mp4",
+      "src": "cosmos2B/friction/_materialexpcube1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_banana_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "banana_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/banana_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/banana_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_cart_roll_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "cart_roll_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/cart_roll_v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/cart_roll_v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_couch_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "couch_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/couch_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/couch_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_couch_slide_v2_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "couch_slide_v2_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/couch_slide-v2_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/couch_slide-v2_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_cup_slide_v1_v2w_friction_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the HIGH Friction target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "cup_slide_v1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/cup_slide-v1_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/cup_slide-v1_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_laundrybasket1_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "laundrybasket1_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/laundrybasket1_v2w_high_friction.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/laundrybasket1_v2w_low_friction.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_plant_slide_v2_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "plant_slide_v2_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/plant_slide-v2_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/plant_slide-v2_v2w_high_friction.mp4",
+      "level": "high"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_friction_sandpaper_cube_slide_v2w_friction_low",
+    "axis": "Control fidelity",
+    "axisDetail": "Friction",
+    "prompt": "Which video better matches the LOW Friction target?",
+    "targetLevel": "low",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "friction",
+      "scenario": "sandpaper_cube_slide_v2w_friction"
+    },
+    "videoA": {
+      "src": "cosmos2B/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+      "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
       "level": "high"
     }
   },
@@ -1971,12 +2511,12 @@
       "scenario": "basketball_bounce_v1_deform_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/basketball_bounce_v1_low_deform_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/basketball_bounce_v1_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
@@ -1991,12 +2531,12 @@
       "scenario": "basketball_bounce_v1_deform_p2"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -2020,11 +2560,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_football_juggle_v1_v2w_deformable_p1_high",
+    "id": "cf_cosmos2B_deformation_football_juggle_v1_v2w_deformable_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
@@ -2051,12 +2591,12 @@
       "scenario": "football_juggle_v2_v2w_deformable_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/football_juggle_v2_v2w_low_deformable_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/football_juggle_v2_v2w_high_deformable_p1.mp4",
+      "level": "high"
     }
   },
   {
@@ -2071,32 +2611,32 @@
       "scenario": "football_juggle_v3_v2w_deformable_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/football_juggle_v3_v2w_high_deformable_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/football_juggle_v3_v2w_low_deformable_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/football_juggle_v3_v2w_high_deformable_p1.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_girl_yogaball_v1_deform_p1_high",
+    "id": "cf_cosmos2B_deformation_girl_yogaball_v1_deform_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
       "scenario": "girl_yogaball_v1_deform_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+      "level": "high"
     }
   },
   {
@@ -2111,12 +2651,12 @@
       "scenario": "girl_yogaball_v2_deform_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
@@ -2160,11 +2700,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_piston_pressure_v2_deform_p1_low",
+    "id": "cf_cosmos2B_deformation_piston_pressure_v2_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
@@ -2180,31 +2720,31 @@
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_piston_pressure_v3_deform_p1_low",
+    "id": "cf_cosmos2B_deformation_piston_pressure_v3_deform_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
       "scenario": "piston_pressure_v3_deform_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/piston_pressure_v3_high_deform_p1.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/piston_pressure_v3_low_deform_p1.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/piston_pressure_v3_high_deform_p1.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_rubber_duck1_v2w_deformable_p2_high",
+    "id": "cf_cosmos2B_deformation_rubber_duck1_v2w_deformable_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
@@ -2220,11 +2760,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_tennis_ball_bounce_2_v2w_deformable_p2_low",
+    "id": "cf_cosmos2B_deformation_tennis_ball_bounce_2_v2w_deformable_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the LOW Deformation target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
@@ -2240,27 +2780,7 @@
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_tennis_ball_bounce_3_v2w_deformable_p2_high",
-    "axis": "Control fidelity",
-    "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
-    "meta": {
-      "method": "cosmos2B",
-      "attribute": "deformation",
-      "scenario": "tennis_ball_bounce_3_v2w_deformable_p2"
-    },
-    "videoA": {
-      "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
-      "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-      "level": "high"
-    }
-  },
-  {
-    "id": "cf_cosmos2B_deformation_tire_rolling_v1_deform_p1_low",
+    "id": "cf_cosmos2B_deformation_tennis_ball_bounce_3_v2w_deformable_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
     "prompt": "Which video better matches the LOW Deformation target?",
@@ -2268,15 +2788,35 @@
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
+      "scenario": "tennis_ball_bounce_3_v2w_deformable_p2"
+    },
+    "videoA": {
+      "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_deformation_tire_rolling_v1_deform_p1_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Deformation",
+    "prompt": "Which video better matches the HIGH Deformation target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "deformation",
       "scenario": "tire_rolling_v1_deform_p1"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/tire_rolling_v1_low_deform_p1.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/tire_rolling_v1_high_deform_p1.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/tire_rolling_v1_low_deform_p1.mp4",
+      "level": "low"
     }
   },
   {
@@ -2300,23 +2840,23 @@
     }
   },
   {
-    "id": "cf_cosmos2B_deformation_trampoline_v2_deformable_p2_high",
+    "id": "cf_cosmos2B_deformation_trampoline_v2_deformable_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Deformation",
-    "prompt": "Which video better matches the HIGH Deformation target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Deformation target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "deformation",
       "scenario": "trampoline_v2_deformable_p2"
     },
     "videoA": {
-      "src": "cosmos2B/deformation/trampoline_v2_low_deformable_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/deformation/trampoline_v2_high_deformable_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/deformation/trampoline_v2_low_deformable_p2.mp4",
+      "level": "low"
     }
   },
   {
@@ -2340,23 +2880,23 @@
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_ball_roll_v1_v2w_bounce_high",
+    "id": "cf_cosmos2B_restitution_ball_roll_v1_v2w_bounce_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
       "scenario": "ball_roll_v1_v2w_bounce"
     },
     "videoA": {
-      "src": "cosmos2B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+      "level": "low"
     }
   },
   {
@@ -2371,20 +2911,20 @@
       "scenario": "ball_roll_v2_v2w_bounce"
     },
     "videoA": {
-      "src": "cosmos2B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-      "level": "high"
-    },
-    "videoB": {
       "src": "cosmos2B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
       "level": "low"
+    },
+    "videoB": {
+      "src": "cosmos2B/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+      "level": "high"
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_ball_roll_v3_v2w_bounce_high",
+    "id": "cf_cosmos2B_restitution_ball_roll_v3_v2w_bounce_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
@@ -2400,11 +2940,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_basketball_bounce_v1_bounce_p1_high",
+    "id": "cf_cosmos2B_restitution_basketball_bounce_v1_bounce_p1_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the HIGH Bounce target?",
-    "targetLevel": "high",
+    "prompt": "Which video better matches the LOW Bounce target?",
+    "targetLevel": "low",
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
@@ -2440,11 +2980,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_football_juggle_v2_v2w_bounce_p1_low",
+    "id": "cf_cosmos2B_restitution_football_juggle_v2_v2w_bounce_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
@@ -2460,11 +3000,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_football_juggle_v3_v2w_bounce_p1_low",
+    "id": "cf_cosmos2B_restitution_football_juggle_v3_v2w_bounce_p1_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
@@ -2480,11 +3020,11 @@
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_rubber_duck1_v2w_bounce_p2_low",
+    "id": "cf_cosmos2B_restitution_rubber_duck1_v2w_bounce_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
@@ -2520,27 +3060,7 @@
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_tennis_ball_bounce_3_v2w_bounce_p2_low",
-    "axis": "Control fidelity",
-    "axisDetail": "Bounce",
-    "prompt": "Which video better matches the LOW Bounce target?",
-    "targetLevel": "low",
-    "meta": {
-      "method": "cosmos2B",
-      "attribute": "restitution",
-      "scenario": "tennis_ball_bounce_3_v2w_bounce_p2"
-    },
-    "videoA": {
-      "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-      "level": "high"
-    },
-    "videoB": {
-      "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-      "level": "low"
-    }
-  },
-  {
-    "id": "cf_cosmos2B_restitution_trampoline_v1_bounce_p2_high",
+    "id": "cf_cosmos2B_restitution_tennis_ball_bounce_3_v2w_bounce_p2_high",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
     "prompt": "Which video better matches the HIGH Bounce target?",
@@ -2548,19 +3068,19 @@
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
-      "scenario": "trampoline_v1_bounce_p2"
+      "scenario": "tennis_ball_bounce_3_v2w_bounce_p2"
     },
     "videoA": {
-      "src": "cosmos2B/restitution/trampoline_v1_low_bounce_p2.mp4",
+      "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
       "level": "low"
     },
     "videoB": {
-      "src": "cosmos2B/restitution/trampoline_v1_high_bounce_p2.mp4",
+      "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
       "level": "high"
     }
   },
   {
-    "id": "cf_cosmos2B_restitution_trampoline_v2_bounce_p2_low",
+    "id": "cf_cosmos2B_restitution_trampoline_v1_bounce_p2_low",
     "axis": "Control fidelity",
     "axisDetail": "Bounce",
     "prompt": "Which video better matches the LOW Bounce target?",
@@ -2568,15 +3088,35 @@
     "meta": {
       "method": "cosmos2B",
       "attribute": "restitution",
+      "scenario": "trampoline_v1_bounce_p2"
+    },
+    "videoA": {
+      "src": "cosmos2B/restitution/trampoline_v1_high_bounce_p2.mp4",
+      "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/restitution/trampoline_v1_low_bounce_p2.mp4",
+      "level": "low"
+    }
+  },
+  {
+    "id": "cf_cosmos2B_restitution_trampoline_v2_bounce_p2_high",
+    "axis": "Control fidelity",
+    "axisDetail": "Bounce",
+    "prompt": "Which video better matches the HIGH Bounce target?",
+    "targetLevel": "high",
+    "meta": {
+      "method": "cosmos2B",
+      "attribute": "restitution",
       "scenario": "trampoline_v2_bounce_p2"
     },
     "videoA": {
-      "src": "cosmos2B/restitution/trampoline_v2_low_bounce_p2.mp4",
-      "level": "low"
-    },
-    "videoB": {
       "src": "cosmos2B/restitution/trampoline_v2_high_bounce_p2.mp4",
       "level": "high"
+    },
+    "videoB": {
+      "src": "cosmos2B/restitution/trampoline_v2_low_bounce_p2.mp4",
+      "level": "low"
     }
   }
 ]

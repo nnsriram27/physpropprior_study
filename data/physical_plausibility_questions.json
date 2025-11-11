@@ -1,5 +1,908 @@
 [
   {
+    "id": "ppset_friction_banana_slide_v1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "banana_slide-v1_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/banana_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/banana_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/banana_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/banana_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_couch_slide_v1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v1_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_couch_slide_v2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v2_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_cup_slide_v1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "cup_slide-v1_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_laundrybasket1_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "laundrybasket1_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/laundrybasket1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/laundrybasket1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/laundrybasket1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/laundrybasket1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_plant_slide_v2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "plant_slide-v2_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_sandpaper_cube_slide_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "sandpaper_cube_slide_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned"
+    },
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_banana_slide_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "banana_slide-v1_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/banana_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/banana_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/banana_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/banana_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_couch_slide_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v1_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_couch_slide_v2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v2_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_cup_slide_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "cup_slide-v1_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_laundrybasket1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "laundrybasket1_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/laundrybasket1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/laundrybasket1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/laundrybasket1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/laundrybasket1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_plant_slide_v2_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "plant_slide-v2_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_sandpaper_cube_slide_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "sandpaper_cube_slide_v2w_{lvl}",
+      "baseline": "cogvideox5B"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_banana_slide_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "banana_slide-v1_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/banana_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/banana_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/banana_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/banana_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_couch_slide_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v1_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_couch_slide_v2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v2_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_cup_slide_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "cup_slide-v1_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_laundrybasket1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "laundrybasket1_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/laundrybasket1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/laundrybasket1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/laundrybasket1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/laundrybasket1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_plant_slide_v2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "plant_slide-v2_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ppset_friction_sandpaper_cube_slide_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "sandpaper_cube_slide_v2w_{lvl}",
+      "baseline": "cosmos2B"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    }
+  },
+  {
     "id": "ppset_deformation_ball_bounce_2_v2w_lvl_baseline_text_conditioned",
     "axis": "Physical realism",
     "axisDetail": "Deformation",
@@ -53,22 +956,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
-      "clips": [
-        {
-          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -79,6 +966,22 @@
         },
         {
           "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -96,22 +999,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -122,6 +1009,22 @@
         },
         {
           "src": "baseline_text_conditioned/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -268,22 +1171,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
-      "clips": [
-        {
-          "src": "baseline_text_conditioned/deformation/piston_pressure_v1_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "baseline_text_conditioned/deformation/piston_pressure_v1_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -294,6 +1181,22 @@
         },
         {
           "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/piston_pressure_v1_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -354,22 +1257,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -380,6 +1267,22 @@
         },
         {
           "src": "baseline_text_conditioned/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -440,22 +1343,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
-      "clips": [
-        {
-          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -466,6 +1353,22 @@
         },
         {
           "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -612,22 +1515,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "cogvideox5B",
-      "label": "CogVideoX5B",
-      "clips": [
-        {
-          "src": "cogvideox5B/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cogvideox5B/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -638,6 +1525,22 @@
         },
         {
           "src": "physpropprior/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/ball_bounce_2_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -655,22 +1558,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -681,6 +1568,22 @@
         },
         {
           "src": "cogvideox5B/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -784,22 +1687,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -810,6 +1697,22 @@
         },
         {
           "src": "cogvideox5B/deformation/girl_yogaball_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v1_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1042,22 +1945,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "cogvideox5B",
-      "label": "CogVideoX5B",
-      "clips": [
-        {
-          "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -1068,6 +1955,22 @@
         },
         {
           "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1085,22 +1988,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -1111,6 +1998,22 @@
         },
         {
           "src": "cogvideox5B/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1128,22 +2031,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -1154,6 +2041,22 @@
         },
         {
           "src": "cogvideox5B/deformation/trampoline_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1300,22 +2203,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cosmos2B",
       "label": "Cosmos2B",
       "clips": [
@@ -1326,6 +2213,22 @@
         },
         {
           "src": "cosmos2B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1429,22 +2332,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cosmos2B",
       "label": "Cosmos2B",
       "clips": [
@@ -1455,6 +2342,22 @@
         },
         {
           "src": "cosmos2B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1472,22 +2375,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/deformation/piston_pressure_v1_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cosmos2B/deformation/piston_pressure_v1_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -1498,6 +2385,22 @@
         },
         {
           "src": "physpropprior/deformation/piston_pressure_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v1_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v1_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1558,22 +2461,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/deformation/piston_pressure_v3_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cosmos2B/deformation/piston_pressure_v3_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -1584,6 +2471,22 @@
         },
         {
           "src": "physpropprior/deformation/piston_pressure_v3_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v3_high_deform_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/piston_pressure_v3_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1601,22 +2504,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cosmos2B/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -1627,6 +2514,22 @@
         },
         {
           "src": "physpropprior/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/rubber_duck1_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/rubber_duck1_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1644,22 +2547,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -1670,6 +2557,22 @@
         },
         {
           "src": "physpropprior/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/tennis_ball_bounce_2_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -1816,22 +2719,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -1842,6 +2729,22 @@
         },
         {
           "src": "baseline_text_conditioned/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -1859,22 +2762,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -1885,6 +2772,22 @@
         },
         {
           "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -1945,22 +2848,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -1971,6 +2858,22 @@
         },
         {
           "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2117,22 +3020,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -2143,6 +3030,22 @@
         },
         {
           "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2160,22 +3063,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
-      "clips": [
-        {
-          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2186,6 +3073,22 @@
         },
         {
           "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2246,22 +3149,6 @@
       "baseline": "baseline_text_conditioned"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "baseline_text_conditioned",
       "label": "Baseline (Text)",
       "clips": [
@@ -2272,6 +3159,22 @@
         },
         {
           "src": "baseline_text_conditioned/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2289,22 +3192,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -2315,6 +3202,22 @@
         },
         {
           "src": "cogvideox5B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2332,22 +3235,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "cogvideox5B",
-      "label": "CogVideoX5B",
-      "clips": [
-        {
-          "src": "cogvideox5B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cogvideox5B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2358,6 +3245,22 @@
         },
         {
           "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2375,22 +3278,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -2401,6 +3288,22 @@
         },
         {
           "src": "cogvideox5B/restitution/ball_roll-v2_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/ball_roll-v2_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2590,22 +3493,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "cogvideox5B",
-      "label": "CogVideoX5B",
-      "clips": [
-        {
-          "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2616,6 +3503,22 @@
         },
         {
           "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2676,22 +3579,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/trampoline_v1_high_bounce_p1.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/trampoline_v1_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cogvideox5B",
       "label": "CogVideoX5B",
       "clips": [
@@ -2702,6 +3589,22 @@
         },
         {
           "src": "cogvideox5B/restitution/trampoline_v1_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/trampoline_v1_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/trampoline_v1_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2719,22 +3622,6 @@
       "baseline": "cogvideox5B"
     },
     "optionA": {
-      "method": "cogvideox5B",
-      "label": "CogVideoX5B",
-      "clips": [
-        {
-          "src": "cogvideox5B/restitution/trampoline_v2_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cogvideox5B/restitution/trampoline_v2_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2745,6 +3632,22 @@
         },
         {
           "src": "physpropprior/restitution/trampoline_v2_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/trampoline_v2_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/trampoline_v2_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2762,22 +3665,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cosmos2B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2788,6 +3675,22 @@
         },
         {
           "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2805,22 +3708,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cosmos2B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2831,6 +3718,22 @@
         },
         {
           "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_roll-v1_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -2891,22 +3794,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cosmos2B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -2917,6 +3804,22 @@
         },
         {
           "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -3063,22 +3966,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "cosmos2B",
       "label": "Cosmos2B",
       "clips": [
@@ -3089,6 +3976,22 @@
         },
         {
           "src": "cosmos2B/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -3106,22 +4009,6 @@
       "baseline": "cosmos2B"
     },
     "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
       "method": "physpropprior",
       "label": "PhysPropPrior",
       "clips": [
@@ -3132,6 +4019,22 @@
         },
         {
           "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cosmos2B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
