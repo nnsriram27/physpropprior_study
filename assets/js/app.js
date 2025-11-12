@@ -232,6 +232,10 @@
         question.contextAlt || 'Reference diagram for this trial';
       elements.contextCaption.textContent =
         contextCaption || 'Reference image for the applied forces.';
+    } else {
+      elements.contextImage.removeAttribute('src');
+      elements.contextImage.alt = '';
+      elements.contextCaption.textContent = '';
     }
   }
 
