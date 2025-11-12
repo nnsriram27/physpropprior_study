@@ -18,8 +18,6 @@ from pathlib import Path
 from typing import Dict, List, Optional, Sequence
 
 DATASET_FILES = {
-  "control_fidelity": "control_fidelity_questions.json",
-  "force_direction": "force_direction_questions.json",
   "physical_plausibility": "physical_plausibility_questions.json",
   "force_baseline": "force_baseline_questions.json",
 }
