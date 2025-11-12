@@ -1,7 +1,9 @@
 (() => {
   const params = new URLSearchParams(window.location.search);
-  const questionSet = params.get('questionSet') || 'questions_sample';
-  const datasetUrl = `data/${questionSet}.json`;
+  const initialQuestionSet = params.get('questionSet') || null;
+  const PACK_MANIFEST_URL = 'data/packs/manifest.json';
+  const STORAGE_KEY = 'userStudy.sessions';
+  const AUTOSAVE_DELAY_MS = 800;
   const config = {
     submissionMode:
       params.get('submissionMode') ||
@@ -31,8 +33,6 @@
     participantPanel: document.getElementById('participantPanel'),
     participantForm: document.getElementById('participantForm'),
     participantName: document.getElementById('participantName'),
-    participantEmail: document.getElementById('participantEmail'),
-    participantNotes: document.getElementById('participantNotes'),
     participantHint: document.getElementById('participantHint'),
     localPanel: document.getElementById('localSubmissionPanel'),
     downloadButton: document.getElementById('downloadButton'),
@@ -46,12 +46,25 @@
     responses: [],
     submissionMode: config.submissionMode,
     isPreview: false,
+    questionSet: initialQuestionSet || null,
+    loadedQuestionSet: null,
+    packManifest: [],
+    sessionKey: null,
+    autosaveTimer: null,
+    remoteSaveController: null,
     participant: {
       name: '',
-      email: '',
-      notes: '',
     },
   };
+
+  let cachedSessions = null;
+  let manifestPromise = null;
+  let activeLoadToken = 0;
+  let lastResolvedNameKey = '';
+
+  manifestPromise = initialQuestionSet
+    ? Promise.resolve([])
+    : loadPackManifest();
 
   function configureSubmissionMode() {
     if (state.submissionMode === 'mturk') {
@@ -86,7 +99,54 @@
     }
   }
 
-  async function loadQuestions() {
+  function alignResponses(total) {
+    const next = new Array(total).fill(null);
+    (state.responses || []).forEach((response, index) => {
+      if (index < total && response) {
+        next[index] = response;
+      }
+    });
+    state.responses = next;
+  }
+
+  function determineResumeIndex() {
+    if (Number.isInteger(state.index) && state.index >= 0) {
+      return Math.min(state.index, Math.max(state.questions.length - 1, 0));
+    }
+    const firstUnanswered = state.responses.findIndex((response) => !response);
+    if (firstUnanswered >= 0) {
+      return firstUnanswered;
+    }
+    return Math.max(state.questions.length - 1, 0);
+  }
+
+  async function loadPackManifest() {
+    try {
+      const response = await fetch(PACK_MANIFEST_URL, { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error(`Unable to load ${PACK_MANIFEST_URL}`);
+      }
+      const payload = await response.json();
+      const packs = Array.isArray(payload)
+        ? payload
+        : Array.isArray(payload.packs)
+          ? payload.packs
+          : [];
+      state.packManifest = packs.filter((item) => typeof item === 'string');
+    } catch (error) {
+      console.warn('Falling back to sample questions. Pack manifest missing.', error);
+      state.packManifest = [];
+    }
+    return state.packManifest;
+  }
+
+  async function loadQuestions(setOverride) {
+    const targetSet =
+      setOverride || state.questionSet || initialQuestionSet || 'questions_sample';
+    state.questionSet = targetSet;
+    const datasetUrl = `data/${targetSet}.json`;
+    const requestToken = ++activeLoadToken;
+
     try {
       const response = await fetch(datasetUrl, { cache: 'no-store' });
       if (!response.ok) {
@@ -96,9 +156,16 @@
       if (!Array.isArray(payload) || payload.length === 0) {
         throw new Error('Question file is empty.');
       }
+      if (requestToken !== activeLoadToken) {
+        return;
+      }
       state.questions = payload;
-      renderQuestion(0);
+      state.loadedQuestionSet = targetSet;
+      alignResponses(payload.length);
+      const startIndex = determineResumeIndex();
+      renderQuestion(startIndex);
       elements.helper.textContent = 'Make a selection to continue.';
+      persistSession();
     } catch (error) {
       console.error(error);
       elements.helper.textContent =
@@ -128,6 +195,7 @@
     const previousChoice = state.responses[index]?.choice || null;
     renderOptions(question, previousChoice);
     updateNavState();
+    persistSession();
   }
 
   function toggleContext(question) {
@@ -309,6 +377,7 @@
       response.field = clone(question.field);
     }
     state.responses[state.index] = response;
+    scheduleAutosave();
   }
 
   function highlightChoice(choice) {
@@ -409,6 +478,7 @@
     if (elements.sendButton) {
       elements.sendButton.addEventListener('click', sendResponses);
     }
+    window.addEventListener('beforeunload', persistSession);
   }
 
   function autoPlayVideo(videoEl) {
@@ -437,11 +507,92 @@
     if (!elements.participantForm) {
       return;
     }
-    state.participant.name = elements.participantName?.value?.trim() || '';
-    state.participant.email = elements.participantEmail?.value?.trim() || '';
-    state.participant.notes = elements.participantNotes?.value?.trim() || '';
+    const name = elements.participantName?.value?.trim() || '';
+    state.participant.name = name;
     updateParticipantHint();
     updateNavState();
+    const nameKey = getNameKey(name);
+    if (!nameKey) {
+      state.sessionKey = null;
+      lastResolvedNameKey = '';
+      return;
+    }
+    if (nameKey === lastResolvedNameKey) {
+      return;
+    }
+    lastResolvedNameKey = nameKey;
+    resetProgressForNewParticipant();
+    state.sessionKey = nameKey;
+    if (!manifestPromise) {
+      manifestPromise = initialQuestionSet
+        ? Promise.resolve([])
+        : loadPackManifest();
+    }
+    manifestPromise
+      .catch(() => [])
+      .finally(() => {
+        resumeOrAssignSession(nameKey);
+      });
+  }
+
+  function resumeOrAssignSession(nameKey) {
+    const stored = getSessionRecord(nameKey);
+    if (stored) {
+      applyStoredSession(stored);
+      return;
+    }
+    if (state.questionSet && initialQuestionSet) {
+      elements.helper.textContent = 'Loading your question set…';
+      loadQuestions(state.questionSet);
+      return;
+    }
+    const assignedSet = pickPackForName(nameKey);
+    state.questionSet = assignedSet;
+    elements.helper.textContent = 'Loading your question set…';
+    loadQuestions(assignedSet);
+  }
+
+  function applyStoredSession(record) {
+    state.questionSet =
+      record.questionSet || state.questionSet || initialQuestionSet || null;
+    state.responses = (record.responses || []).map((entry) => entry || null);
+    state.index = record.index || 0;
+    if (record.participant?.name && elements.participantName) {
+      elements.participantName.value = record.participant.name;
+      state.participant.name = record.participant.name;
+    }
+    updateParticipantHint();
+    if (state.loadedQuestionSet === state.questionSet && state.questions.length) {
+      renderQuestion(determineResumeIndex());
+    } else if (state.questionSet) {
+      loadQuestions(state.questionSet);
+    }
+  }
+
+  function pickPackForName(nameKey) {
+    if (state.packManifest.length === 0) {
+      return 'questions_sample';
+    }
+    const hash = hashString(nameKey);
+    const index = Math.abs(hash) % state.packManifest.length;
+    return state.packManifest[index];
+  }
+
+  function hashString(value) {
+    let hash = 0;
+    for (let i = 0; i < value.length; i += 1) {
+      hash = (hash << 5) - hash + value.charCodeAt(i);
+      hash |= 0;
+    }
+    return hash;
+  }
+
+  function resetProgressForNewParticipant() {
+    state.questions = [];
+    state.responses = [];
+    state.index = 0;
+    state.loadedQuestionSet = null;
+    state.questionSet = initialQuestionSet || null;
   }
 
   function updateParticipantHint() {
@@ -486,8 +637,9 @@
   }
 
   function buildSubmissionPayload() {
+    const setId = state.questionSet || initialQuestionSet || 'questions_sample';
     return {
-      questionSet,
+      questionSet: setId,
       completedAt: new Date().toISOString(),
       participant: state.participant,
       responses: state.responses.filter(Boolean),
@@ -496,6 +648,7 @@
   }
 
   function downloadResponses() {
+    persistSession();
     const payload = buildSubmissionPayload();
     const blob = new Blob([JSON.stringify(payload, null, 2)], {
       type: 'application/json',
@@ -526,35 +679,21 @@
       }
       return;
     }
-    const payload = buildSubmissionPayload();
+    persistSession();
     if (elements.sendButton) {
       elements.sendButton.disabled = true;
     }
     if (elements.submissionStatus) {
       elements.submissionStatus.textContent = 'Uploading…';
     }
-    try {
-      const response = await fetch(config.responseEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-      if (!response.ok) {
-        throw new Error(`Upload failed (${response.status})`);
-      }
-      if (elements.submissionStatus) {
-        elements.submissionStatus.textContent = 'Responses sent successfully!';
-      }
-    } catch (error) {
-      console.error(error);
-      if (elements.submissionStatus) {
-        elements.submissionStatus.textContent =
-          'Upload failed. Please try again or use the download option.';
-      }
-    } finally {
-      if (elements.sendButton) {
-        elements.sendButton.disabled = false;
-      }
+    const ok = await syncToEndpoint(false);
+    if (elements.submissionStatus) {
+      elements.submissionStatus.textContent = ok
+        ? 'Responses sent successfully!'
+        : 'Upload failed. Please try again or use the download option.';
+    }
+    if (elements.sendButton) {
+      elements.sendButton.disabled = false;
     }
   }
 
@@ -569,11 +708,111 @@
     return JSON.parse(JSON.stringify(value));
   }
 
-  function start() {
+  function scheduleAutosave() {
+    if (state.autosaveTimer) {
+      window.clearTimeout(state.autosaveTimer);
+    }
+    state.autosaveTimer = window.setTimeout(() => {
+      state.autosaveTimer = null;
+      persistSession();
+      const isPartial = !allQuestionsAnswered();
+      syncToEndpoint(isPartial);
+    }, AUTOSAVE_DELAY_MS);
+  }
+
+  function persistSession() {
+    if (!state.sessionKey || !window.localStorage) {
+      return;
+    }
+    const store = readSessions();
+    store[state.sessionKey] = {
+      questionSet: state.questionSet,
+      responses: (state.responses || []).map((response) => response || null),
+      index: state.index || 0,
+      participant: { name: state.participant.name || '' },
+      updatedAt: new Date().toISOString(),
+    };
+    writeSessions(store);
+  }
+
+  async function syncToEndpoint(isPartial) {
+    if (!config.responseEndpoint) {
+      return false;
+    }
+    if (state.remoteSaveController) {
+      state.remoteSaveController.abort();
+    }
+    const controller = new AbortController();
+    state.remoteSaveController = controller;
+    let success = false;
+    try {
+      const payload = {
+        ...buildSubmissionPayload(),
+        autosave: true,
+        status: isPartial ? 'in_progress' : 'completed',
+        progress: {
+          answered: state.responses.filter(Boolean).length,
+          total: state.questions.length,
+        },
+      };
+      await fetch(config.responseEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+        signal: controller.signal,
+      });
+      success = true;
+    } catch (error) {
+      console.warn('Autosave failed', error);
+    } finally {
+      if (state.remoteSaveController === controller) {
+        state.remoteSaveController = null;
+      }
+    }
+    return success;
+  }
+
+  function readSessions() {
+    if (cachedSessions) {
+      return cachedSessions;
+    }
+    try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      cachedSessions = raw ? JSON.parse(raw) : {};
+    } catch (error) {
+      console.warn('Unable to read stored sessions', error);
+      cachedSessions = {};
+    }
+    return cachedSessions;
+  }
+
+  function writeSessions(store) {
+    cachedSessions = store;
+    try {
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+    } catch (error) {
+      console.warn('Unable to persist session progress', error);
+    }
+  }
+
+  function getSessionRecord(nameKey) {
+    const store = readSessions();
+    return store?.[nameKey] || null;
+  }
+
+  function getNameKey(name) {
+    return name?.trim().toLowerCase() || '';
+  }
+
+  async function start() {
     configureSubmissionMode();
     updateParticipantHint();
     bindEvents();
-    loadQuestions();
+    if (state.questionSet) {
+      await loadQuestions(state.questionSet);
+    } else if (manifestPromise) {
+      manifestPromise.catch(() => {});
+    }
   }
 
   start();
