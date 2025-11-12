@@ -4,6 +4,7 @@
   line-height: 1.5;
   color: #0f172a;
   background-color: #ffffff;
+  --clip-height: clamp(160px, 22vw, 260px);
 }
 
 *,
@@ -16,6 +17,7 @@ body {
   margin: 0;
   background: #ffffff;
   color: #0f172a;
+  min-height: 100vh;
 }
 
 img,
@@ -28,7 +30,8 @@ video {
 .study-shell {
   width: min(1600px, 96vw);
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  padding: 1.5rem clamp(1rem, 3vw, 2rem) 3rem;
+  min-height: 100vh;
 }
 
 .study-header {
@@ -106,17 +109,18 @@ video {
 
 .prompt-row {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 1px solid #e2e8f0;
   border-radius: 0.75rem;
   background: #f8fafc;
+  min-height: 180px;
 }
 
 .prompt-row .question-text {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   font-weight: 600;
   flex: 2;
 }
@@ -124,10 +128,19 @@ video {
 .context-block {
   flex: 1;
   text-align: center;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .context-block img {
   margin: 0 auto 0.25rem;
+  max-height: var(--clip-height);
+  width: 100%;
+  object-fit: contain;
 }
 
 .context-block p {
@@ -142,6 +155,7 @@ video {
   gap: 1.5rem;
   margin-top: 2rem;
   align-items: stretch;
+  min-height: calc(var(--clip-height) + 170px);
 }
 
 .video-option {
@@ -155,6 +169,7 @@ video {
   gap: 0.85rem;
   height: 100%;
   background: #ffffff;
+  min-height: calc(var(--clip-height) + 160px);
   transition: transform 120ms ease, box-shadow 120ms ease;
 }
 
@@ -209,6 +224,7 @@ video {
   grid-auto-columns: minmax(0, 1fr);
   gap: 0.75rem;
   flex-grow: 1;
+  align-items: stretch;
 }
 
 @media (max-width: 900px) {
@@ -224,6 +240,8 @@ video {
   border-radius: 0.65rem;
   padding: 0.75rem;
   background: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .clip-label {
@@ -320,5 +338,26 @@ video {
 
   .control-bar button {
     width: 100%;
+  }
+}
+.clip-block video {
+  width: 100%;
+  height: var(--clip-height);
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: #000;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --clip-height: 180px;
+  }
+
+  .prompt-row {
+    flex-direction: column;
+  }
+
+  .context-block {
+    max-width: 100%;
   }
 }
