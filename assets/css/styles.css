@@ -346,6 +346,37 @@ video {
   object-fit: contain;
   border-radius: 0.5rem;
   background: #000;
+  position: relative;
+}
+
+/* Loading states for videos */
+.video-loading {
+  background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Loading state for context image */
+.context-block img.image-loading {
+  background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+  background-size: 200% 100%;
+  animation: loading-shimmer 1.5s infinite;
+  min-height: 100px;
+}
+
+/* Video error styling */
+.video-error {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
 }
 
 @media (max-width: 640px) {

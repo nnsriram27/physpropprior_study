@@ -53,6 +53,7 @@
     sessionKey: null,
     autosaveTimer: null,
     remoteSaveController: null,
+    isNavigating: false,
     participant: {
       name: '',
     },
@@ -198,10 +199,35 @@
     }
   }
 
+  function cleanupAllVideos() {
+    // Properly cleanup all video elements before removing them from DOM
+    const videos = document.querySelectorAll('video');
+    videos.forEach((video) => {
+      try {
+        video.pause();
+        video.removeAttribute('src');
+        video.load(); // This aborts any pending network requests
+      } catch (error) {
+        console.warn('Error cleaning up video:', error);
+      }
+    });
+  }
+
   function renderQuestion(index) {
+    // Prevent rendering if already navigating
+    if (state.isNavigating) {
+      return;
+    }
+
+    state.isNavigating = true;
+
+    // Clean up all existing videos before rendering new question
+    cleanupAllVideos();
+
     state.index = index;
     const question = state.questions[index];
     if (!question) {
+      state.isNavigating = false;
       return;
     }
 
@@ -220,13 +246,47 @@
     renderOptions(question, previousChoice);
     updateNavState();
     persistSession();
+
+    // Allow navigation again after a short delay to prevent rapid clicks
+    setTimeout(() => {
+      state.isNavigating = false;
+    }, 300);
   }
 
   function toggleContext(question) {
     const { contextImage, contextCaption } = question;
     const hasContext = Boolean(contextImage);
     elements.contextBlock.hidden = !hasContext;
+
     if (hasContext) {
+      // Clear previous image first to avoid flashing old content
+      const oldSrc = elements.contextImage.src;
+      if (oldSrc && oldSrc !== contextImage) {
+        elements.contextImage.removeAttribute('src');
+      }
+
+      // Add loading state
+      elements.contextImage.classList.add('image-loading');
+
+      // Set up error handling
+      const handleError = () => {
+        console.error('Context image failed to load:', contextImage);
+        elements.contextImage.classList.remove('image-loading');
+        elements.contextCaption.textContent = 'Reference image failed to load';
+        elements.contextCaption.style.color = '#d32f2f';
+      };
+
+      const handleLoad = () => {
+        elements.contextImage.classList.remove('image-loading');
+        elements.contextCaption.style.color = '';
+      };
+
+      // Remove old listeners and add new ones
+      elements.contextImage.removeEventListener('error', handleError);
+      elements.contextImage.removeEventListener('load', handleLoad);
+      elements.contextImage.addEventListener('error', handleError, { once: true });
+      elements.contextImage.addEventListener('load', handleLoad, { once: true });
+
       elements.contextImage.src = contextImage;
       elements.contextImage.alt =
         question.contextAlt || 'Reference diagram for this trial';
@@ -236,6 +296,8 @@
       elements.contextImage.removeAttribute('src');
       elements.contextImage.alt = '';
       elements.contextCaption.textContent = '';
+      elements.contextImage.classList.remove('image-loading');
+      elements.contextCaption.style.color = '';
     }
   }
 
@@ -351,7 +413,7 @@
   }
 
   function configureMedia(videoEl, meta = {}) {
-    const { src, poster } = meta || {};
+    const { src, poster, label } = meta || {};
     videoEl.pause();
     videoEl.loop = true;
     videoEl.muted = true;
@@ -370,6 +432,27 @@
     } else {
       videoEl.removeAttribute('poster');
     }
+
+    // Add error handling for video loading
+    videoEl.addEventListener('error', (e) => {
+      console.error('Video loading error:', src, e);
+      const parent = videoEl.parentElement;
+      if (parent) {
+        const errorMsg = document.createElement('div');
+        errorMsg.className = 'video-error';
+        errorMsg.textContent = 'Video failed to load';
+        errorMsg.style.cssText = 'color: #d32f2f; padding: 10px; text-align: center; background: #ffebee; border-radius: 4px;';
+        parent.appendChild(errorMsg);
+      }
+    }, { once: true });
+
+    // Add loading indicator
+    videoEl.classList.add('video-loading');
+
+    // Remove loading state once video can play
+    videoEl.addEventListener('canplay', () => {
+      videoEl.classList.remove('video-loading');
+    }, { once: true });
 
     videoEl.load();
     autoPlayVideo(videoEl);
@@ -495,14 +578,14 @@
   }
 
   function goNext() {
-    if (state.index >= state.questions.length - 1) {
+    if (state.index >= state.questions.length - 1 || state.isNavigating) {
       return;
     }
     renderQuestion(state.index + 1);
   }
 
   function goBack() {
-    if (state.index === 0) {
+    if (state.index === 0 || state.isNavigating) {
       return;
     }
     renderQuestion(state.index - 1);
