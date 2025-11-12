@@ -112,5 +112,56 @@
       "meta.baseline": "baseline_text_conditioned",
       "meta.attribute": "friction"
     }
+  },
+  {
+    "id": "physical_cogvideox5B_restitution",
+    "label": "Physical Realism — CogVideoX5B (Restitution)",
+    "axis": "physical_realism",
+    "method": "cogvideox5B",
+    "attribute": "restitution",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cogvideox5B",
+      "meta.attribute": "restitution"
+    }
+  },
+  {
+    "id": "physical_cogvideox5B_deformation",
+    "label": "Physical Realism — CogVideoX5B (Deformation)",
+    "axis": "physical_realism",
+    "method": "cogvideox5B",
+    "attribute": "deformation",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cogvideox5B",
+      "meta.attribute": "deformation"
+    }
+  },
+  {
+    "id": "physical_cogvideox5B_force",
+    "label": "Physical Realism — CogVideoX5B (Force)",
+    "axis": "physical_realism",
+    "method": "cogvideox5B",
+    "attribute": "force",
+    "dataset": "force_baseline",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cogvideox5B"
+    }
+  },
+  {
+    "id": "physical_cogvideox5B_friction",
+    "label": "Physical Realism — CogVideoX5B (Friction)",
+    "axis": "physical_realism",
+    "method": "cogvideox5B",
+    "attribute": "friction",
+    "dataset": "physical_plausibility",
+    "questions": 2,
+    "filters": {
+      "meta.baseline": "cogvideox5B",
+      "meta.attribute": "friction"
+    }
   }
 ]

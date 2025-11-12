@@ -1,14 +1,14 @@
 [
   {
-    "id": "ppset_friction_plant_slide_v2_v2w_lvl_baseline_text_conditioned",
+    "id": "ppset_friction_plant_slide_v2_v2w_lvl_cogvideox5B",
     "axis": "Physical realism",
     "axisDetail": "Friction",
     "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
     "meta": {
       "attribute": "friction",
       "scenarioKey": "plant_slide-v2_v2w_{lvl}",
-      "baseline": "baseline_text_conditioned",
-      "fieldId": "physical_baseline_text_conditioned_friction"
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_friction"
     },
     "optionA": {
       "method": "physpropprior",
@@ -27,16 +27,630 @@
       ]
     },
     "optionB": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
       "clips": [
         {
-          "src": "baseline_text_conditioned/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "src": "cogvideox5B/friction/plant_slide-v2_v2w_high_friction.mp4",
           "level": "high",
           "label": "HIGH Friction"
         },
         {
-          "src": "baseline_text_conditioned/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "src": "cogvideox5B/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cogvideox5B_friction",
+      "label": "Physical Realism \u2014 CogVideoX5B (Friction)",
+      "axis": "physical_realism",
+      "method": "cogvideox5B",
+      "attribute": "friction"
+    },
+    "fieldId": "physical_cogvideox5B_friction",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Friction)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "ppset_friction_plant_slide_v2_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "plant_slide-v2_v2w_{lvl}",
+      "baseline": "cosmos2B",
+      "fieldId": "physical_cosmos2B_friction"
+    },
+    "optionA": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/plant_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cosmos2B_friction",
+      "label": "Physical Realism \u2014 Base Model (Friction)",
+      "axis": "physical_realism",
+      "method": "cosmos2B",
+      "attribute": "friction"
+    },
+    "fieldId": "physical_cosmos2B_friction",
+    "fieldLabel": "Physical Realism \u2014 Base Model (Friction)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "fb_toycar4_v2w_force_030_181_baseline_text_conditioned",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_toycar4_v2w_force_030",
+      "angle": "181",
+      "baseline": "baseline_text_conditioned",
+      "fieldId": "physical_baseline_text_conditioned_force"
+    },
+    "videoA": {
+      "src": "baseline_text_conditioned/force/_toycar4_v2w_force_030_angle_181.mp4",
+      "method": "baseline_text_conditioned"
+    },
+    "videoB": {
+      "src": "physpropprior/force/_toycar4_v2w_force_030_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/_toycar4_v2w_force_030_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction.",
+    "field": {
+      "id": "physical_baseline_text_conditioned_force",
+      "label": "Physical Realism \u2014 Ours (Text) (Force)",
+      "axis": "physical_realism",
+      "method": "baseline_text_conditioned",
+      "attribute": "force"
+    },
+    "fieldId": "physical_baseline_text_conditioned_force",
+    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Force)",
+    "dataset": "force_baseline"
+  },
+  {
+    "id": "ppset_restitution_football_juggle_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
+    "meta": {
+      "attribute": "restitution",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_restitution"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/football_juggle_v1_v2w_high_bounce_p1.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/football_juggle_v1_v2w_low_bounce_p1.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cogvideox5B_restitution",
+      "label": "Physical Realism \u2014 CogVideoX5B (Restitution)",
+      "axis": "physical_realism",
+      "method": "cogvideox5B",
+      "attribute": "restitution"
+    },
+    "fieldId": "physical_cogvideox5B_restitution",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Restitution)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "ppset_deformation_trampoline_v2_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "trampoline_v2_{lvl}",
+      "baseline": "cosmos2B",
+      "fieldId": "physical_cosmos2B_deformation"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/deformation/trampoline_v2_high_deformable_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cosmos2B/deformation/trampoline_v2_low_deformable_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cosmos2B_deformation",
+      "label": "Physical Realism \u2014 Base Model (Deformation)",
+      "axis": "physical_realism",
+      "method": "cosmos2B",
+      "attribute": "deformation"
+    },
+    "fieldId": "physical_cosmos2B_deformation",
+    "fieldLabel": "Physical Realism \u2014 Base Model (Deformation)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "ppset_friction_cup_slide_v1_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "cup_slide-v1_v2w_{lvl}",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_friction"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cogvideox5B/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/cup_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cogvideox5B_friction",
+      "label": "Physical Realism \u2014 CogVideoX5B (Friction)",
+      "axis": "physical_realism",
+      "method": "cogvideox5B",
+      "attribute": "friction"
+    },
+    "fieldId": "physical_cogvideox5B_friction",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Friction)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "ppset_restitution_tennis_ball_bounce_3_v2w_lvl_cogvideox5B",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
+    "meta": {
+      "attribute": "restitution",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_restitution"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "cogvideox5B/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_3_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cogvideox5B_restitution",
+      "label": "Physical Realism \u2014 CogVideoX5B (Restitution)",
+      "axis": "physical_realism",
+      "method": "cogvideox5B",
+      "attribute": "restitution"
+    },
+    "fieldId": "physical_cogvideox5B_restitution",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Restitution)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "fb_cup_slide_v1_v2w_force_051_271_cosmos2B",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "cup_slide-v1_v2w_force_051",
+      "angle": "271",
+      "baseline": "cosmos2B",
+      "fieldId": "physical_cosmos2B_force"
+    },
+    "videoA": {
+      "src": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_271.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "cosmos2B/force/cup_slide-v1_v2w_force_051_angle_271.mp4",
+      "method": "cosmos2B"
+    },
+    "contextImage": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_271_force.png",
+    "contextCaption": "Arrow indicates the intended force direction.",
+    "field": {
+      "id": "physical_cosmos2B_force",
+      "label": "Physical Realism \u2014 Base Model (Force)",
+      "axis": "physical_realism",
+      "method": "cosmos2B",
+      "attribute": "force"
+    },
+    "fieldId": "physical_cosmos2B_force",
+    "fieldLabel": "Physical Realism \u2014 Base Model (Force)",
+    "dataset": "force_baseline"
+  },
+  {
+    "id": "ppset_restitution_tennis_ball_bounce_2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Bounce",
+    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
+    "meta": {
+      "attribute": "restitution",
+      "scenarioKey": "tennis_ball_bounce_2_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned",
+      "fieldId": "physical_baseline_text_conditioned_restitution"
+    },
+    "optionA": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "baseline_text_conditioned/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "level": "high",
+          "label": "HIGH Bounce"
+        },
+        {
+          "src": "physpropprior/restitution/tennis_ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "level": "low",
+          "label": "LOW Bounce"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_baseline_text_conditioned_restitution",
+      "label": "Physical Realism \u2014 Ours (Text) (Restitution)",
+      "axis": "physical_realism",
+      "method": "baseline_text_conditioned",
+      "attribute": "restitution"
+    },
+    "fieldId": "physical_baseline_text_conditioned_restitution",
+    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Restitution)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "fb_curling_v1_v2w_force_051_181_force_prompting",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "curling_v1_v2w_force_051",
+      "angle": "181",
+      "baseline": "force_prompting",
+      "fieldId": "physical_force_prompting_force"
+    },
+    "videoA": {
+      "src": "force_prompting/force/curling_v1_v2w_force_051_angle_181.mp4",
+      "method": "force_prompting"
+    },
+    "videoB": {
+      "src": "physpropprior/force/curling_v1_v2w_force_051_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "contextImage": "physpropprior/force/curling_v1_v2w_force_051_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction.",
+    "field": {
+      "id": "physical_force_prompting_force",
+      "label": "Physical Realism \u2014 Force Prompting (Force)",
+      "axis": "physical_realism",
+      "method": "force_prompting",
+      "attribute": "force"
+    },
+    "fieldId": "physical_force_prompting_force",
+    "fieldLabel": "Physical Realism \u2014 Force Prompting (Force)",
+    "dataset": "force_baseline"
+  },
+  {
+    "id": "ppset_friction_couch_slide_v1_v2w_lvl_cosmos2B",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v1_v2w_{lvl}",
+      "baseline": "cosmos2B",
+      "fieldId": "physical_cosmos2B_friction"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "cosmos2B",
+      "label": "Cosmos2B",
+      "clips": [
+        {
+          "src": "cosmos2B/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "cosmos2B/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cosmos2B_friction",
+      "label": "Physical Realism \u2014 Base Model (Friction)",
+      "axis": "physical_realism",
+      "method": "cosmos2B",
+      "attribute": "friction"
+    },
+    "fieldId": "physical_cosmos2B_friction",
+    "fieldLabel": "Physical Realism \u2014 Base Model (Friction)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "ppset_deformation_basketball_bounce_v1_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
+      "baseline": "baseline_text_conditioned",
+      "fieldId": "physical_baseline_text_conditioned_deformation"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_high_deform_p2.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "baseline_text_conditioned/deformation/basketball_bounce_v1_low_deform_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_baseline_text_conditioned_deformation",
+      "label": "Physical Realism \u2014 Ours (Text) (Deformation)",
+      "axis": "physical_realism",
+      "method": "baseline_text_conditioned",
+      "attribute": "deformation"
+    },
+    "fieldId": "physical_baseline_text_conditioned_deformation",
+    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Deformation)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "fb_toycar4_v2w_force_030_181_cogvideox5B",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_toycar4_v2w_force_030",
+      "angle": "181",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_force"
+    },
+    "videoA": {
+      "src": "physpropprior/force/_toycar4_v2w_force_030_angle_181.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "cogvideox5B/force/_toycar4_v2w_force_030_angle_181.mp4",
+      "method": "cogvideox5B"
+    },
+    "contextImage": "physpropprior/force/_toycar4_v2w_force_030_angle_181_force.png",
+    "contextCaption": "Arrow indicates the intended force direction.",
+    "field": {
+      "id": "physical_cogvideox5B_force",
+      "label": "Physical Realism \u2014 CogVideoX5B (Force)",
+      "axis": "physical_realism",
+      "method": "cogvideox5B",
+      "attribute": "force"
+    },
+    "fieldId": "physical_cogvideox5B_force",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Force)",
+    "dataset": "force_baseline"
+  },
+  {
+    "id": "ppset_friction_couch_slide_v2_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Friction",
+    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "meta": {
+      "attribute": "friction",
+      "scenarioKey": "couch_slide-v2_v2w_{lvl}",
+      "baseline": "baseline_text_conditioned",
+      "fieldId": "physical_baseline_text_conditioned_friction"
+    },
+    "optionA": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "physpropprior/friction/couch_slide-v2_v2w_low_friction.mp4",
+          "level": "low",
+          "label": "LOW Friction"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
+      "clips": [
+        {
+          "src": "baseline_text_conditioned/friction/couch_slide-v2_v2w_high_friction.mp4",
+          "level": "high",
+          "label": "HIGH Friction"
+        },
+        {
+          "src": "baseline_text_conditioned/friction/couch_slide-v2_v2w_low_friction.mp4",
           "level": "low",
           "label": "LOW Friction"
         }
@@ -108,133 +722,25 @@
     "dataset": "physical_plausibility"
   },
   {
-    "id": "ppset_restitution_ball_roll_v3_v2w_lvl_baseline_text_conditioned",
-    "axis": "Physical realism",
-    "axisDetail": "Bounce",
-    "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
-    "meta": {
-      "attribute": "restitution",
-      "scenarioKey": "ball_roll-v3_v2w_{lvl}",
-      "baseline": "baseline_text_conditioned",
-      "fieldId": "physical_baseline_text_conditioned_restitution"
-    },
-    "optionA": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
-      "clips": [
-        {
-          "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "baseline_text_conditioned/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "optionB": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
-          "level": "high",
-          "label": "HIGH Bounce"
-        },
-        {
-          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
-          "level": "low",
-          "label": "LOW Bounce"
-        }
-      ]
-    },
-    "field": {
-      "id": "physical_baseline_text_conditioned_restitution",
-      "label": "Physical Realism \u2014 Ours (Text) (Restitution)",
-      "axis": "physical_realism",
-      "method": "baseline_text_conditioned",
-      "attribute": "restitution"
-    },
-    "fieldId": "physical_baseline_text_conditioned_restitution",
-    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Restitution)",
-    "dataset": "physical_plausibility"
-  },
-  {
-    "id": "ppset_friction_plant_slide_v2_v2w_lvl_cosmos2B",
-    "axis": "Physical realism",
-    "axisDetail": "Friction",
-    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
-    "meta": {
-      "attribute": "friction",
-      "scenarioKey": "plant_slide-v2_v2w_{lvl}",
-      "baseline": "cosmos2B",
-      "fieldId": "physical_cosmos2B_friction"
-    },
-    "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/friction/plant_slide-v2_v2w_high_friction.mp4",
-          "level": "high",
-          "label": "HIGH Friction"
-        },
-        {
-          "src": "cosmos2B/friction/plant_slide-v2_v2w_low_friction.mp4",
-          "level": "low",
-          "label": "LOW Friction"
-        }
-      ]
-    },
-    "optionB": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/friction/plant_slide-v2_v2w_high_friction.mp4",
-          "level": "high",
-          "label": "HIGH Friction"
-        },
-        {
-          "src": "physpropprior/friction/plant_slide-v2_v2w_low_friction.mp4",
-          "level": "low",
-          "label": "LOW Friction"
-        }
-      ]
-    },
-    "field": {
-      "id": "physical_cosmos2B_friction",
-      "label": "Physical Realism \u2014 Base Model (Friction)",
-      "axis": "physical_realism",
-      "method": "cosmos2B",
-      "attribute": "friction"
-    },
-    "fieldId": "physical_cosmos2B_friction",
-    "fieldLabel": "Physical Realism \u2014 Base Model (Friction)",
-    "dataset": "physical_plausibility"
-  },
-  {
-    "id": "fb_materialexplaundrybasket1_v2w_force_051_179_force_prompting",
+    "id": "fb_materialexpcube1_v2w_force_051_271_force_prompting",
     "axis": "Force adherence",
     "axisDetail": "Baseline comparison",
     "prompt": "Which video better obeys the applied force direction?",
     "meta": {
-      "scenario": "_materialexplaundrybasket1_v2w_force_051",
-      "angle": "179",
+      "scenario": "_materialexpcube1_v2w_force_051",
+      "angle": "271",
       "baseline": "force_prompting",
       "fieldId": "physical_force_prompting_force"
     },
     "videoA": {
-      "src": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_179.mp4",
+      "src": "physpropprior/force/_materialexpcube1_v2w_force_051_angle_271.mp4",
       "method": "physpropprior"
     },
     "videoB": {
-      "src": "force_prompting/force/_materialexplaundrybasket1_v2w_force_051_angle_179.mp4",
+      "src": "force_prompting/force/_materialexpcube1_v2w_force_051_angle_271.mp4",
       "method": "force_prompting"
     },
-    "contextImage": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_179_force.png",
+    "contextImage": "physpropprior/force/_materialexpcube1_v2w_force_051_angle_271_force.png",
     "contextCaption": "Arrow indicates the intended force direction.",
     "field": {
       "id": "physical_force_prompting_force",
@@ -248,97 +754,129 @@
     "dataset": "force_baseline"
   },
   {
-    "id": "ppset_friction_couch_slide_v1_v2w_lvl_cosmos2B",
+    "id": "ppset_deformation_basketball_bounce_v1_lvl_cogvideox5B",
     "axis": "Physical realism",
-    "axisDetail": "Friction",
-    "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
-      "attribute": "friction",
-      "scenarioKey": "couch_slide-v1_v2w_{lvl}",
-      "baseline": "cosmos2B",
-      "fieldId": "physical_cosmos2B_friction"
+      "attribute": "deformation",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_deformation"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
       "clips": [
         {
-          "src": "physpropprior/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "src": "cogvideox5B/deformation/basketball_bounce_v1_high_deform_p2.mp4",
           "level": "high",
-          "label": "HIGH Friction"
+          "label": "HIGH Deformation"
         },
         {
-          "src": "physpropprior/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "src": "cogvideox5B/deformation/basketball_bounce_v1_low_deform_p1.mp4",
           "level": "low",
-          "label": "LOW Friction"
+          "label": "LOW Deformation"
         }
       ]
     },
     "optionB": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
       "clips": [
         {
-          "src": "cosmos2B/friction/couch_slide-v1_v2w_high_friction.mp4",
+          "src": "physpropprior/deformation/basketball_bounce_v1_high_deform_p2.mp4",
           "level": "high",
-          "label": "HIGH Friction"
+          "label": "HIGH Deformation"
         },
         {
-          "src": "cosmos2B/friction/couch_slide-v1_v2w_low_friction.mp4",
+          "src": "physpropprior/deformation/basketball_bounce_v1_low_deform_p2.mp4",
           "level": "low",
-          "label": "LOW Friction"
+          "label": "LOW Deformation"
         }
       ]
     },
     "field": {
-      "id": "physical_cosmos2B_friction",
-      "label": "Physical Realism \u2014 Base Model (Friction)",
+      "id": "physical_cogvideox5B_deformation",
+      "label": "Physical Realism \u2014 CogVideoX5B (Deformation)",
       "axis": "physical_realism",
-      "method": "cosmos2B",
-      "attribute": "friction"
+      "method": "cogvideox5B",
+      "attribute": "deformation"
     },
-    "fieldId": "physical_cosmos2B_friction",
-    "fieldLabel": "Physical Realism \u2014 Base Model (Friction)",
+    "fieldId": "physical_cogvideox5B_deformation",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Deformation)",
     "dataset": "physical_plausibility"
   },
   {
-    "id": "ppset_friction_laundrybasket1_v2w_lvl_baseline_text_conditioned",
+    "id": "fb_toycar4_v2w_force_051_1_baseline_text_conditioned",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
+    "meta": {
+      "scenario": "_toycar4_v2w_force_051",
+      "angle": "1",
+      "baseline": "baseline_text_conditioned",
+      "fieldId": "physical_baseline_text_conditioned_force"
+    },
+    "videoA": {
+      "src": "physpropprior/force/_toycar4_v2w_force_051_angle_1.mp4",
+      "method": "physpropprior"
+    },
+    "videoB": {
+      "src": "baseline_text_conditioned/force/_toycar4_v2w_force_051_angle_1.mp4",
+      "method": "baseline_text_conditioned"
+    },
+    "contextImage": "physpropprior/force/_toycar4_v2w_force_051_angle_1_force.png",
+    "contextCaption": "Arrow indicates the intended force direction.",
+    "field": {
+      "id": "physical_baseline_text_conditioned_force",
+      "label": "Physical Realism \u2014 Ours (Text) (Force)",
+      "axis": "physical_realism",
+      "method": "baseline_text_conditioned",
+      "attribute": "force"
+    },
+    "fieldId": "physical_baseline_text_conditioned_force",
+    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Force)",
+    "dataset": "force_baseline"
+  },
+  {
+    "id": "ppset_friction_sandpaper_cube_slide_v2w_lvl_baseline_text_conditioned",
     "axis": "Physical realism",
     "axisDetail": "Friction",
     "prompt": "Which method better distinguishes HIGH vs LOW Friction?",
     "meta": {
       "attribute": "friction",
-      "scenarioKey": "laundrybasket1_v2w_{lvl}",
+      "scenarioKey": "sandpaper_cube_slide_v2w_{lvl}",
       "baseline": "baseline_text_conditioned",
       "fieldId": "physical_baseline_text_conditioned_friction"
     },
     "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
+      "method": "baseline_text_conditioned",
+      "label": "Baseline (Text)",
       "clips": [
         {
-          "src": "physpropprior/friction/laundrybasket1_v2w_high_friction.mp4",
+          "src": "baseline_text_conditioned/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
           "level": "high",
           "label": "HIGH Friction"
         },
         {
-          "src": "physpropprior/friction/laundrybasket1_v2w_low_friction.mp4",
+          "src": "baseline_text_conditioned/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
           "level": "low",
           "label": "LOW Friction"
         }
       ]
     },
     "optionB": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
       "clips": [
         {
-          "src": "baseline_text_conditioned/friction/laundrybasket1_v2w_high_friction.mp4",
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_high_friction.mp4",
           "level": "high",
           "label": "HIGH Friction"
         },
         {
-          "src": "baseline_text_conditioned/friction/laundrybasket1_v2w_low_friction.mp4",
+          "src": "physpropprior/friction/sandpaper_cube_slide_v2w_low_friction.mp4",
           "level": "low",
           "label": "LOW Friction"
         }
@@ -356,13 +894,13 @@
     "dataset": "physical_plausibility"
   },
   {
-    "id": "ppset_restitution_ball_roll_v1_v2w_lvl_baseline_text_conditioned",
+    "id": "ppset_restitution_basketball_bounce_v1_lvl_baseline_text_conditioned",
     "axis": "Physical realism",
     "axisDetail": "Bounce",
     "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenarioKey": "ball_roll-v1_v2w_{lvl}",
+      "scenarioKey": "basketball_bounce_v1_{lvl}",
       "baseline": "baseline_text_conditioned",
       "fieldId": "physical_baseline_text_conditioned_restitution"
     },
@@ -371,12 +909,12 @@
       "label": "Baseline (Text)",
       "clips": [
         {
-          "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
           "level": "high",
           "label": "HIGH Bounce"
         },
         {
-          "src": "baseline_text_conditioned/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "src": "baseline_text_conditioned/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -387,12 +925,12 @@
       "label": "PhysPropPrior",
       "clips": [
         {
-          "src": "physpropprior/restitution/ball_roll-v1_v2w_high_bounce.mp4",
+          "src": "physpropprior/restitution/basketball_bounce_v1_high_bounce_p1.mp4",
           "level": "high",
           "label": "HIGH Bounce"
         },
         {
-          "src": "physpropprior/restitution/ball_roll-v1_v2w_low_bounce.mp4",
+          "src": "physpropprior/restitution/basketball_bounce_v1_low_bounce_p1.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -410,45 +948,67 @@
     "dataset": "physical_plausibility"
   },
   {
-    "id": "fb_sprite_v1_v2w_force_051_1_baseline_text_conditioned",
-    "axis": "Force adherence",
-    "axisDetail": "Baseline comparison",
-    "prompt": "Which video better obeys the applied force direction?",
-    "meta": {
-      "scenario": "sprite_v1_v2w_force_051",
-      "angle": "1",
-      "baseline": "baseline_text_conditioned",
-      "fieldId": "physical_baseline_text_conditioned_force"
-    },
-    "videoA": {
-      "src": "physpropprior/force/sprite_v1_v2w_force_051_angle_1.mp4",
-      "method": "physpropprior"
-    },
-    "videoB": {
-      "src": "baseline_text_conditioned/force/sprite_v1_v2w_force_051_angle_1.mp4",
-      "method": "baseline_text_conditioned"
-    },
-    "contextImage": "physpropprior/force/sprite_v1_v2w_force_051_angle_1_force.png",
-    "contextCaption": "Arrow indicates the intended force direction.",
-    "field": {
-      "id": "physical_baseline_text_conditioned_force",
-      "label": "Physical Realism \u2014 Ours (Text) (Force)",
-      "axis": "physical_realism",
-      "method": "baseline_text_conditioned",
-      "attribute": "force"
-    },
-    "fieldId": "physical_baseline_text_conditioned_force",
-    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Force)",
-    "dataset": "force_baseline"
-  },
-  {
-    "id": "ppset_deformation_trampoline_v1_lvl_baseline_text_conditioned",
+    "id": "ppset_deformation_football_juggle_v1_v2w_lvl_cogvideox5B",
     "axis": "Physical realism",
     "axisDetail": "Deformation",
     "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
     "meta": {
       "attribute": "deformation",
-      "scenarioKey": "trampoline_v1_{lvl}",
+      "scenarioKey": "football_juggle_v1_v2w_{lvl}",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_deformation"
+    },
+    "optionA": {
+      "method": "cogvideox5B",
+      "label": "CogVideoX5B",
+      "clips": [
+        {
+          "src": "cogvideox5B/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "cogvideox5B/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "optionB": {
+      "method": "physpropprior",
+      "label": "PhysPropPrior",
+      "clips": [
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_high_deformable_p1.mp4",
+          "level": "high",
+          "label": "HIGH Deformation"
+        },
+        {
+          "src": "physpropprior/deformation/football_juggle_v1_v2w_low_deformable_p1.mp4",
+          "level": "low",
+          "label": "LOW Deformation"
+        }
+      ]
+    },
+    "field": {
+      "id": "physical_cogvideox5B_deformation",
+      "label": "Physical Realism \u2014 CogVideoX5B (Deformation)",
+      "axis": "physical_realism",
+      "method": "cogvideox5B",
+      "attribute": "deformation"
+    },
+    "fieldId": "physical_cogvideox5B_deformation",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Deformation)",
+    "dataset": "physical_plausibility"
+  },
+  {
+    "id": "ppset_deformation_tennis_ball_bounce_3_v2w_lvl_baseline_text_conditioned",
+    "axis": "Physical realism",
+    "axisDetail": "Deformation",
+    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "meta": {
+      "attribute": "deformation",
+      "scenarioKey": "tennis_ball_bounce_3_v2w_{lvl}",
       "baseline": "baseline_text_conditioned",
       "fieldId": "physical_baseline_text_conditioned_deformation"
     },
@@ -457,12 +1017,12 @@
       "label": "PhysPropPrior",
       "clips": [
         {
-          "src": "physpropprior/deformation/trampoline_v1_high_deform_p2.mp4",
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
           "level": "high",
           "label": "HIGH Deformation"
         },
         {
-          "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
+          "src": "physpropprior/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -473,12 +1033,12 @@
       "label": "Baseline (Text)",
       "clips": [
         {
-          "src": "baseline_text_conditioned/deformation/trampoline_v1_high_deform_p2.mp4",
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_high_deformable_p2.mp4",
           "level": "high",
           "label": "HIGH Deformation"
         },
         {
-          "src": "baseline_text_conditioned/deformation/trampoline_v1_low_deform_p2.mp4",
+          "src": "baseline_text_conditioned/deformation/tennis_ball_bounce_3_v2w_low_deformable_p2.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
@@ -496,77 +1056,13 @@
     "dataset": "physical_plausibility"
   },
   {
-    "id": "fb_sprite_v1_v2w_force_051_1_force_prompting",
-    "axis": "Force adherence",
-    "axisDetail": "Baseline comparison",
-    "prompt": "Which video better obeys the applied force direction?",
-    "meta": {
-      "scenario": "sprite_v1_v2w_force_051",
-      "angle": "1",
-      "baseline": "force_prompting",
-      "fieldId": "physical_force_prompting_force"
-    },
-    "videoA": {
-      "src": "force_prompting/force/sprite_v1_v2w_force_051_angle_1.mp4",
-      "method": "force_prompting"
-    },
-    "videoB": {
-      "src": "physpropprior/force/sprite_v1_v2w_force_051_angle_1.mp4",
-      "method": "physpropprior"
-    },
-    "contextImage": "physpropprior/force/sprite_v1_v2w_force_051_angle_1_force.png",
-    "contextCaption": "Arrow indicates the intended force direction.",
-    "field": {
-      "id": "physical_force_prompting_force",
-      "label": "Physical Realism \u2014 Force Prompting (Force)",
-      "axis": "physical_realism",
-      "method": "force_prompting",
-      "attribute": "force"
-    },
-    "fieldId": "physical_force_prompting_force",
-    "fieldLabel": "Physical Realism \u2014 Force Prompting (Force)",
-    "dataset": "force_baseline"
-  },
-  {
-    "id": "fb_cup_slide_v1_v2w_force_051_1_cosmos2B",
-    "axis": "Force adherence",
-    "axisDetail": "Baseline comparison",
-    "prompt": "Which video better obeys the applied force direction?",
-    "meta": {
-      "scenario": "cup_slide-v1_v2w_force_051",
-      "angle": "1",
-      "baseline": "cosmos2B",
-      "fieldId": "physical_cosmos2B_force"
-    },
-    "videoA": {
-      "src": "cosmos2B/force/cup_slide-v1_v2w_force_051_angle_1.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_1.mp4",
-      "method": "physpropprior"
-    },
-    "contextImage": "physpropprior/force/cup_slide-v1_v2w_force_051_angle_1_force.png",
-    "contextCaption": "Arrow indicates the intended force direction.",
-    "field": {
-      "id": "physical_cosmos2B_force",
-      "label": "Physical Realism \u2014 Base Model (Force)",
-      "axis": "physical_realism",
-      "method": "cosmos2B",
-      "attribute": "force"
-    },
-    "fieldId": "physical_cosmos2B_force",
-    "fieldLabel": "Physical Realism \u2014 Base Model (Force)",
-    "dataset": "force_baseline"
-  },
-  {
-    "id": "ppset_restitution_ball_bounce_2_v2w_lvl_cosmos2B",
+    "id": "ppset_restitution_ball_roll_v3_v2w_lvl_cosmos2B",
     "axis": "Physical realism",
     "axisDetail": "Bounce",
     "prompt": "Which method better distinguishes HIGH vs LOW Bounce?",
     "meta": {
       "attribute": "restitution",
-      "scenarioKey": "ball_bounce_2_v2w_{lvl}",
+      "scenarioKey": "ball_roll-v3_v2w_{lvl}",
       "baseline": "cosmos2B",
       "fieldId": "physical_cosmos2B_restitution"
     },
@@ -575,12 +1071,12 @@
       "label": "PhysPropPrior",
       "clips": [
         {
-          "src": "physpropprior/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_high_bounce.mp4",
           "level": "high",
           "label": "HIGH Bounce"
         },
         {
-          "src": "physpropprior/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "src": "physpropprior/restitution/ball_roll-v3_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -591,12 +1087,12 @@
       "label": "Cosmos2B",
       "clips": [
         {
-          "src": "cosmos2B/restitution/ball_bounce_2_v2w_high_bounce_p2.mp4",
+          "src": "cosmos2B/restitution/ball_roll-v3_v2w_high_bounce.mp4",
           "level": "high",
           "label": "HIGH Bounce"
         },
         {
-          "src": "cosmos2B/restitution/ball_bounce_2_v2w_low_bounce_p2.mp4",
+          "src": "cosmos2B/restitution/ball_roll-v3_v2w_low_bounce.mp4",
           "level": "low",
           "label": "LOW Bounce"
         }
@@ -614,90 +1110,68 @@
     "dataset": "physical_plausibility"
   },
   {
-    "id": "fb_curling_v2_v2w_force_051_315_baseline_text_conditioned",
+    "id": "fb_cart_roll_v1_v2w_force_090_1_cosmos2B",
     "axis": "Force adherence",
     "axisDetail": "Baseline comparison",
     "prompt": "Which video better obeys the applied force direction?",
     "meta": {
-      "scenario": "curling_v2_v2w_force_051",
-      "angle": "315",
-      "baseline": "baseline_text_conditioned",
-      "fieldId": "physical_baseline_text_conditioned_force"
+      "scenario": "cart_roll_v1_v2w_force_090",
+      "angle": "1",
+      "baseline": "cosmos2B",
+      "fieldId": "physical_cosmos2B_force"
     },
     "videoA": {
-      "src": "baseline_text_conditioned/force/curling_v2_v2w_force_051_angle_315.mp4",
-      "method": "baseline_text_conditioned"
+      "src": "cosmos2B/force/cart_roll_v1_v2w_force_090_angle_1.mp4",
+      "method": "cosmos2B"
     },
     "videoB": {
-      "src": "physpropprior/force/curling_v2_v2w_force_051_angle_315.mp4",
+      "src": "physpropprior/force/cart_roll_v1_v2w_force_090_angle_1.mp4",
       "method": "physpropprior"
     },
-    "contextImage": "physpropprior/force/curling_v2_v2w_force_051_angle_315_force.png",
+    "contextImage": "physpropprior/force/cart_roll_v1_v2w_force_090_angle_1_force.png",
     "contextCaption": "Arrow indicates the intended force direction.",
     "field": {
-      "id": "physical_baseline_text_conditioned_force",
-      "label": "Physical Realism \u2014 Ours (Text) (Force)",
+      "id": "physical_cosmos2B_force",
+      "label": "Physical Realism \u2014 Base Model (Force)",
       "axis": "physical_realism",
-      "method": "baseline_text_conditioned",
+      "method": "cosmos2B",
       "attribute": "force"
     },
-    "fieldId": "physical_baseline_text_conditioned_force",
-    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Force)",
+    "fieldId": "physical_cosmos2B_force",
+    "fieldLabel": "Physical Realism \u2014 Base Model (Force)",
     "dataset": "force_baseline"
   },
   {
-    "id": "ppset_deformation_girl_yogaball_v2_lvl_baseline_text_conditioned",
-    "axis": "Physical realism",
-    "axisDetail": "Deformation",
-    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
+    "id": "fb_materialexplaundrybasket1_v2w_force_051_179_cogvideox5B",
+    "axis": "Force adherence",
+    "axisDetail": "Baseline comparison",
+    "prompt": "Which video better obeys the applied force direction?",
     "meta": {
-      "attribute": "deformation",
-      "scenarioKey": "girl_yogaball_v2_{lvl}",
-      "baseline": "baseline_text_conditioned",
-      "fieldId": "physical_baseline_text_conditioned_deformation"
+      "scenario": "_materialexplaundrybasket1_v2w_force_051",
+      "angle": "179",
+      "baseline": "cogvideox5B",
+      "fieldId": "physical_cogvideox5B_force"
     },
-    "optionA": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
+    "videoA": {
+      "src": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_179.mp4",
+      "method": "physpropprior"
     },
-    "optionB": {
-      "method": "baseline_text_conditioned",
-      "label": "Baseline (Text)",
-      "clips": [
-        {
-          "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "baseline_text_conditioned/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
+    "videoB": {
+      "src": "cogvideox5B/force/_materialexplaundrybasket1_v2w_force_051_angle_179.mp4",
+      "method": "cogvideox5B"
     },
+    "contextImage": "physpropprior/force/_materialexplaundrybasket1_v2w_force_051_angle_179_force.png",
+    "contextCaption": "Arrow indicates the intended force direction.",
     "field": {
-      "id": "physical_baseline_text_conditioned_deformation",
-      "label": "Physical Realism \u2014 Ours (Text) (Deformation)",
+      "id": "physical_cogvideox5B_force",
+      "label": "Physical Realism \u2014 CogVideoX5B (Force)",
       "axis": "physical_realism",
-      "method": "baseline_text_conditioned",
-      "attribute": "deformation"
+      "method": "cogvideox5B",
+      "attribute": "force"
     },
-    "fieldId": "physical_baseline_text_conditioned_deformation",
-    "fieldLabel": "Physical Realism \u2014 Ours (Text) (Deformation)",
-    "dataset": "physical_plausibility"
+    "fieldId": "physical_cogvideox5B_force",
+    "fieldLabel": "Physical Realism \u2014 CogVideoX5B (Force)",
+    "dataset": "force_baseline"
   },
   {
     "id": "ppset_deformation_trampoline_v1_lvl_cosmos2B",
@@ -737,92 +1211,6 @@
         },
         {
           "src": "physpropprior/deformation/trampoline_v1_low_deform_p2.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "field": {
-      "id": "physical_cosmos2B_deformation",
-      "label": "Physical Realism \u2014 Base Model (Deformation)",
-      "axis": "physical_realism",
-      "method": "cosmos2B",
-      "attribute": "deformation"
-    },
-    "fieldId": "physical_cosmos2B_deformation",
-    "fieldLabel": "Physical Realism \u2014 Base Model (Deformation)",
-    "dataset": "physical_plausibility"
-  },
-  {
-    "id": "fb_banana_slide_v1_v2w_force_095_315_cosmos2B",
-    "axis": "Force adherence",
-    "axisDetail": "Baseline comparison",
-    "prompt": "Which video better obeys the applied force direction?",
-    "meta": {
-      "scenario": "banana_slide-v1_v2w_force_095",
-      "angle": "315",
-      "baseline": "cosmos2B",
-      "fieldId": "physical_cosmos2B_force"
-    },
-    "videoA": {
-      "src": "cosmos2B/force/banana_slide-v1_v2w_force_095_angle_315.mp4",
-      "method": "cosmos2B"
-    },
-    "videoB": {
-      "src": "physpropprior/force/banana_slide-v1_v2w_force_095_angle_315.mp4",
-      "method": "physpropprior"
-    },
-    "contextImage": "physpropprior/force/banana_slide-v1_v2w_force_095_angle_315_force.png",
-    "contextCaption": "Arrow indicates the intended force direction.",
-    "field": {
-      "id": "physical_cosmos2B_force",
-      "label": "Physical Realism \u2014 Base Model (Force)",
-      "axis": "physical_realism",
-      "method": "cosmos2B",
-      "attribute": "force"
-    },
-    "fieldId": "physical_cosmos2B_force",
-    "fieldLabel": "Physical Realism \u2014 Base Model (Force)",
-    "dataset": "force_baseline"
-  },
-  {
-    "id": "ppset_deformation_girl_yogaball_v2_lvl_cosmos2B",
-    "axis": "Physical realism",
-    "axisDetail": "Deformation",
-    "prompt": "Which method better distinguishes HIGH vs LOW Deformation?",
-    "meta": {
-      "attribute": "deformation",
-      "scenarioKey": "girl_yogaball_v2_{lvl}",
-      "baseline": "cosmos2B",
-      "fieldId": "physical_cosmos2B_deformation"
-    },
-    "optionA": {
-      "method": "cosmos2B",
-      "label": "Cosmos2B",
-      "clips": [
-        {
-          "src": "cosmos2B/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "cosmos2B/deformation/girl_yogaball_v2_low_deform_p1.mp4",
-          "level": "low",
-          "label": "LOW Deformation"
-        }
-      ]
-    },
-    "optionB": {
-      "method": "physpropprior",
-      "label": "PhysPropPrior",
-      "clips": [
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v2_high_deform_p1.mp4",
-          "level": "high",
-          "label": "HIGH Deformation"
-        },
-        {
-          "src": "physpropprior/deformation/girl_yogaball_v2_low_deform_p1.mp4",
           "level": "low",
           "label": "LOW Deformation"
         }
