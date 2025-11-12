@@ -1,5 +1,7 @@
 https://script.google.com/macros/s/AKfycbzwE6dMVePzfsGO9NkWyOJ51pcCZjAdSPu2bPTgNI_N-Blkl9uO0hvwv5f-NKqrXA6VCw/exec
 
+https://script.google.com/macros/s/AKfycbwJfYaEOtsPCIU1UysR3tgGmB8SyTDRHOMksUP24f2oBMdf6C7SShmByFafzp8wG3oCEw/exec
+
 
 python src/sample_question_packs.py \
   --count 5 --prefix friend \

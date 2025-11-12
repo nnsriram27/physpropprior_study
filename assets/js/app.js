@@ -22,6 +22,7 @@
     helper: document.getElementById('helperText'),
     backButton: document.getElementById('backButton'),
     nextButton: document.getElementById('nextButton'),
+    skipButton: document.getElementById('skipButton'),
     submissionPanel: document.getElementById('submissionPanel'),
     submitButton: document.getElementById('submitButton'),
     responsesInput: document.getElementById('responses'),
@@ -97,6 +98,29 @@
         elements.sendButton.hidden = !config.responseEndpoint;
       }
     }
+  }
+
+  function skipCurrentQuestion() {
+    const question = state.questions[state.index];
+    if (!question || !elements.skipButton || elements.skipButton.disabled) {
+      return;
+    }
+    const response = createResponsePayload(question, {
+      choice: null,
+      skipped: true,
+      skipReason: 'user',
+    });
+    if (!response) {
+      return;
+    }
+    state.responses[state.index] = response;
+    scheduleAutosave();
+    const onLastQuestion = state.index >= state.questions.length - 1;
+    if (onLastQuestion) {
+      updateNavState();
+      return;
+    }
+    renderQuestion(state.index + 1);
   }
 
   function alignResponses(total) {
@@ -354,9 +378,11 @@
     updateNavState();
   }
 
-  function recordResponse(choice) {
-    const question = state.questions[state.index];
-    const response = {
+  function createResponsePayload(question, extra = {}) {
+    if (!question) {
+      return null;
+    }
+    const payload = {
       questionId: question.id || `question_${state.index + 1}`,
       fieldId: question.fieldId || question.field?.id || null,
       fieldLabel: question.fieldLabel || question.field?.label || null,
@@ -364,7 +390,6 @@
       axis: question.axis || null,
       axisDetail: question.axisDetail || null,
       prompt: question.prompt || '',
-      choice,
       targetLevel: question.targetLevel || question.meta?.targetLevel || null,
       meta: clone(question.meta),
       videoA: clone(question.videoA),
@@ -372,9 +397,19 @@
       optionA: clone(question.optionA),
       optionB: clone(question.optionB),
       timestamp: new Date().toISOString(),
+      ...extra,
     };
     if (question.field) {
-      response.field = clone(question.field);
+      payload.field = clone(question.field);
+    }
+    return payload;
+  }
+
+  function recordResponse(choice) {
+    const question = state.questions[state.index];
+    const response = createResponsePayload(question, { choice });
+    if (!response) {
+      return;
     }
     state.responses[state.index] = response;
     scheduleAutosave();
@@ -401,6 +436,9 @@
     const onLastQuestion = state.index === total - 1;
     elements.backButton.disabled = state.index === 0;
     elements.nextButton.disabled = !answeredCurrent || onLastQuestion;
+    if (elements.skipButton) {
+      elements.skipButton.disabled = answeredCurrent || total === 0;
+    }
     elements.nextButton.textContent = onLastQuestion
       ? 'All Saved'
       : 'Save & Next';
@@ -469,6 +507,9 @@
   function bindEvents() {
     elements.nextButton.addEventListener('click', goNext);
     elements.backButton.addEventListener('click', goBack);
+    if (elements.skipButton) {
+      elements.skipButton.addEventListener('click', skipCurrentQuestion);
+    }
     if (elements.participantForm) {
       elements.participantForm.addEventListener('input', handleParticipantInput);
     }
@@ -633,6 +674,9 @@
     elements.backButton.disabled = locked || state.index === 0;
     if (locked) {
       elements.nextButton.disabled = true;
+      if (elements.skipButton) {
+        elements.skipButton.disabled = true;
+      }
     }
   }
 
